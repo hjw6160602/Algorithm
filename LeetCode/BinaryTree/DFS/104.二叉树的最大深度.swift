@@ -9,6 +9,14 @@
 import Foundation
 
 extension Solution {
+    
+    func maxDepthP1(_ root: TreeNode?) -> Int {
+        guard let node = root else {
+            return 0
+        }
+        return max(maxDepth(node.left), maxDepth(node.right)) + 1
+    }
+    
     //  dp[root] = max(dp[root.left] + 1 ，dp[root.right] + 1)
     func maxDepth104(_ root: TreeNode?) -> Int {
         let max = dfs(root)
