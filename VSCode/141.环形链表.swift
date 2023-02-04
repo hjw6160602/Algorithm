@@ -25,12 +25,13 @@ class Solution {
         while fast != nil {
             slow = slow?.next
             fast = fast?.next?.next
-            if slow?.val == fast?.val {
+            if let slow = slow,
+                let fast = fast,
+                slow.val == fast.val {
                 return true
             }
         }
         return false
-    
     }
 }
 // @lc code=end
