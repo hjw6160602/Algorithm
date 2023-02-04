@@ -10,6 +10,28 @@ import Foundation
 
 extension Solution {
     
+    func detectCycleP1(_ head: ListNode?) -> ListNode? {
+        var slow = head, fast = head
+        
+        while fast != nil && fast?.next != nil {
+            slow = slow?.next
+            fast = fast?.next?.next
+            if slow === fast {
+                break
+            }
+        }
+        if fast === nil || fast?.next === nil {
+            return nil
+        }
+        
+        slow = head
+        while slow !== fast {
+            slow = slow?.next
+            fast = fast?.next
+        }
+        return slow
+    }
+    
     func detectCycle(_ head: ListNode?) -> ListNode? {
         if (head == nil) { return head }
         // 快慢指针
