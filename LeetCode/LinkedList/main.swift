@@ -15,6 +15,7 @@ class Solution {
     private init() {}
 }
 
+testPartition()
 //test25EqualNode()
 //test148sortList()
 // 两数之和
@@ -27,10 +28,8 @@ class Solution {
 //testGetIntersectionNode()
 //
 //testRemoveElements()
-// 分隔链表
-//testPartition()
 // 回文链表
-testIsPalindrome()
+//testIsPalindrome()
 // 删除排序链表中的重复元素
 //testDeleteDuplicates()
 //test23MergeKLists()

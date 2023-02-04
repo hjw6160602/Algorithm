@@ -10,6 +10,34 @@ import Foundation
 
 extension Solution {
     
+    func partitionP1(_ head: ListNode?, _ x: Int) -> ListNode? {
+        var node = head
+        
+        let dummy = ListNode()
+        dummy.next = node
+        var l1 = dummy
+        
+        let rDummy = ListNode()
+        var l2 = rDummy
+        
+        while node != nil {
+            let nxtNode = node!.next
+            node!.next = nil
+            
+            if node!.val < x {
+                l1.next = node
+                l1 = l1.next!
+            } else {
+                l2.next = node
+                l2 = l2.next!
+            }
+            node = nxtNode
+        }
+        l1.next = rDummy.next
+        
+        return dummy.next
+    }
+    
 //    执行用时：8 ms 在所有 Swift 提交中击败了 94.44% 的用户
 //    内存消耗：13.5 MB 在所有 Swift 提交中击败了 70.37% 的用户
 //    通过测试用例：168 / 168
@@ -72,7 +100,7 @@ extension Solution {
 func testPartition() {
     let list = LinkedList.createList( [1,4,3,2,5,2] )
     LinkedList.display(list)
-    let res = Solution.shared.partition(list, 3)
+    let res = Solution.shared.partitionP1(list, 3)
     LinkedList.display(res)
 }
 
