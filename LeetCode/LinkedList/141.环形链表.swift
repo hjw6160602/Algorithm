@@ -12,6 +12,19 @@ import Foundation
 extension Solution {
 //    48 ms  90.26%
 //    15.3 MB 71.31%
+    func hasCycleFace(_ head: ListNode?) -> Bool {
+        var slow = head, fast = head
+        
+        while fast != nil && fast?.next != nil {
+            slow = slow?.next
+            fast  = fast?.next?.next
+            if fast === slow {
+                return true
+            }
+        }
+        return false
+    }
+    
     func hasCycle(_ head: ListNode?) -> Bool {
 
         var rabbit = head, turttle = head

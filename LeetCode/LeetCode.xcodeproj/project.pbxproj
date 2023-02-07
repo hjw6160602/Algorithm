@@ -200,6 +200,7 @@
 		CA5C263328709F3B00836003 /* 326. 3 的幂 .swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C263228709F3B00836003 /* 326. 3 的幂 .swift */; };
 		CA5C26372871E4AE00836003 /* 191. 位1的个数.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C26362871E4AE00836003 /* 191. 位1的个数.swift */; };
 		CA5C26392871E86F00836003 /* 204. 计数质数.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C26382871E86F00836003 /* 204. 计数质数.swift */; };
+		CA8439BA29921B8E00C24AC2 /* 76.最小覆盖子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439B929921B8E00C24AC2 /* 76.最小覆盖子串.swift */; };
 		CA8C23C2287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C23C1287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift */; };
 		CA8C23C5287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C23C4287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift */; };
 		CA95817025E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95816F25E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift */; };
@@ -540,6 +541,7 @@
 		CA5C263228709F3B00836003 /* 326. 3 的幂 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "326. 3 的幂 .swift"; sourceTree = "<group>"; };
 		CA5C26362871E4AE00836003 /* 191. 位1的个数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "191. 位1的个数.swift"; sourceTree = "<group>"; };
 		CA5C26382871E86F00836003 /* 204. 计数质数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "204. 计数质数.swift"; sourceTree = "<group>"; };
+		CA8439B929921B8E00C24AC2 /* 76.最小覆盖子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "76.最小覆盖子串.swift"; sourceTree = "<group>"; };
 		CA8C23C1287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "783.二叉搜索树节点最小距离.swift"; sourceTree = "<group>"; };
 		CA8C23C4287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "938. 二叉搜索树的范围和.swift"; sourceTree = "<group>"; };
 		CA95816F25E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1013.将数组分成和相等的三个部分.swift"; sourceTree = "<group>"; };
@@ -972,6 +974,7 @@
 				CA487B4A28961EAB004EF75D /* 412. Fizz Buzz.swift */,
 				676FBC4D289AB28B005882F5 /* 139. 单词拆分.swift */,
 				CA1B8E64289D5F5500C2D6E5 /* 340. 至多包含 K 个不同字符的最长子串.swift */,
+				CA8439B929921B8E00C24AC2 /* 76.最小覆盖子串.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -1580,6 +1583,7 @@
 				CA5C2621286DE60C00836003 /* 409. 最长回文串.swift in Sources */,
 				80F2C0C925DE49D50051398B /* 08. StringToInteger.swift in Sources */,
 				CAF524302809D1F200A62886 /* 67.二进制求和.swift in Sources */,
+				CA8439BA29921B8E00C24AC2 /* 76.最小覆盖子串.swift in Sources */,
 				675D212725FF5893002D2C73 /* 821.字符串最短距离.swift in Sources */,
 				676FBC4E289AB28B005882F5 /* 139. 单词拆分.swift in Sources */,
 				80F2C32A25DE5BC40051398B /* 03. 无重复字符的最长子串.swift in Sources */,
