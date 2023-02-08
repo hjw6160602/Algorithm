@@ -1,17 +1,19 @@
-/*
- * @lc app=leetcode.cn id=304 lang=swift
- *
- * [304] 二维区域和检索 - 矩阵不可变
- */
+//
+//  304. 二维区域和检索 - 矩阵不可变.swift
+//  Array
+//
+//  Created by 贺嘉炜 on 2023/2/8.
+//  Copyright © 2023 saidicaprio. All rights reserved.
+//
 
-// @lc code=start
+import Foundation
 
-//    2228 ms 5.88%
-//    17.1 MB 64.71%
 class NumMatrix {
 
     var preSum = [[Int]]()
 
+//    2228 ms 5.88%
+//    17.1 MB 64.71%
     init(_ matrix: [[Int]]) {
         let m = matrix.count, n = matrix[0].count
 
@@ -32,10 +34,11 @@ class NumMatrix {
     }
 }
 
-/**
- * Your NumMatrix object will be instantiated and called as such:
- * let obj = NumMatrix(matrix)
- * let ret_1: Int = obj.sumRegion(row1, col1, row2, col2)
- */
-// @lc code=end
+func test304NumMatrix() {
+    let matrix = NumMatrix([[-4,-5]])
+    let x = matrix.sumRegion(0, 0, 0, 0)
+    let y = matrix.sumRegion(0, 0, 0, 1)
+    let z = matrix.sumRegion(0, 1, 0, 1)
+    print(x,y,z)
+}
 

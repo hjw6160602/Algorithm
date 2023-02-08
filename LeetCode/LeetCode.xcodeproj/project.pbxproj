@@ -201,6 +201,7 @@
 		CA5C26372871E4AE00836003 /* 191. 位1的个数.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C26362871E4AE00836003 /* 191. 位1的个数.swift */; };
 		CA5C26392871E86F00836003 /* 204. 计数质数.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C26382871E86F00836003 /* 204. 计数质数.swift */; };
 		CA8439BA29921B8E00C24AC2 /* 76.最小覆盖子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439B929921B8E00C24AC2 /* 76.最小覆盖子串.swift */; };
+		CA8439BC299379FD00C24AC2 /* 304. 二维区域和检索 - 矩阵不可变.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439BB299379FD00C24AC2 /* 304. 二维区域和检索 - 矩阵不可变.swift */; };
 		CA8C23C2287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C23C1287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift */; };
 		CA8C23C5287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C23C4287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift */; };
 		CA95817025E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95816F25E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift */; };
@@ -542,6 +543,7 @@
 		CA5C26362871E4AE00836003 /* 191. 位1的个数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "191. 位1的个数.swift"; sourceTree = "<group>"; };
 		CA5C26382871E86F00836003 /* 204. 计数质数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "204. 计数质数.swift"; sourceTree = "<group>"; };
 		CA8439B929921B8E00C24AC2 /* 76.最小覆盖子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "76.最小覆盖子串.swift"; sourceTree = "<group>"; };
+		CA8439BB299379FD00C24AC2 /* 304. 二维区域和检索 - 矩阵不可变.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "304. 二维区域和检索 - 矩阵不可变.swift"; sourceTree = "<group>"; };
 		CA8C23C1287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "783.二叉搜索树节点最小距离.swift"; sourceTree = "<group>"; };
 		CA8C23C4287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "938. 二叉搜索树的范围和.swift"; sourceTree = "<group>"; };
 		CA95816F25E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1013.将数组分成和相等的三个部分.swift"; sourceTree = "<group>"; };
@@ -942,6 +944,7 @@
 				CA22431C28918E6B00332C01 /* 1480. 一维数组的动态和.swift */,
 				CA45D7AA2898254100436EFB /* 48. 旋转图像.swift */,
 				67631DCE28B510BA00F29636 /* 238. 除自身以外数组的乘积.swift */,
+				CA8439BB299379FD00C24AC2 /* 304. 二维区域和检索 - 矩阵不可变.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -1541,6 +1544,7 @@
 				67FAFA81276237FD003C357F /* 16.16.部分排序.swift in Sources */,
 				CA2243002885B13D00332C01 /* 11. 盛最多水的容器.swift in Sources */,
 				CA22430E288C375400332C01 /* 217. 存在重复元素.swift in Sources */,
+				CA8439BC299379FD00C24AC2 /* 304. 二维区域和检索 - 矩阵不可变.swift in Sources */,
 				80F2C3CB25DF8D640051398B /* 01. 两数之和.swift in Sources */,
 				67B568A327C7BD4E003B6487 /* 42.接雨水.swift in Sources */,
 				CAF523DA27FDF47800A62886 /* 136.只出现一次的数字.swift in Sources */,
