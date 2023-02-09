@@ -7,27 +7,53 @@
 //  https://leetcode-cn.com/problems/combinations
 
 extension Solution {
+//    func combine(_ n: Int, _ k: Int) -> [[Int]] {
+//        var result = [[Int]]()
+//        var combination = [Int]()
+//
+//        selectRecur(&result, &combination, start: 1, n: n, left: k)
+//
+//        return result
+//    }
+//
+//    private func selectRecur(_ res: inout [[Int]], _ combination: inout [Int], start: Int, n: Int, left: Int) {
+//        if left == 0 {
+//            res.append(combination)
+//            return
+//        }
+//        guard start <= n else {
+//            return
+//        }
+//        for i in start...n {
+//            combination.append(i)
+//            selectRecur(&res, &combination, start: i + 1, n: n, left: left - 1)
+//            combination.removeLast()
+//        }
+//    }
+    
+    
     func combine(_ n: Int, _ k: Int) -> [[Int]] {
-        var result = [[Int]]()
-        var combination = [Int]()
+        var res = [[Int]]()
+        var track = [Int]()
         
-        selectRecur(&result, &combination, start: 1, n: n, left: k)
+        backtrace(n, k, 1, &res, &track)
         
-        return result
+        return res
     }
     
-    private func selectRecur(_ res: inout [[Int]], _ combination: inout [Int], start: Int, n: Int, left: Int) {
-        if left == 0 {
-            res.append(combination)
+    func backtrace(_ n: Int, _ k: Int, _ start: Int,_ res: inout [[Int]], _ track: inout [Int]) {
+        // 递归基
+        if track.count == k {
+            res.append(track)
             return
         }
-        guard start <= n else {
-            return
-        }
+        
+        guard start <= n else { return }
+        
         for i in start...n {
-            combination.append(i)
-            selectRecur(&res, &combination, start: i + 1, n: n, left: left - 1)
-            combination.removeLast()
+            track.append(i)
+            backtrace(n, k , i+1, &res, &track)
+            track.removeLast()
         }
     }
 }
@@ -46,7 +72,7 @@ func testCombine() {
 //        let res = LeetCode.combine(N, i)
 //        sum += res.count
 //    }
-    let res = LeetCode.combine(3, 3)
+    let res = LeetCode.combine(4, 2)
     print(res)
 }
 

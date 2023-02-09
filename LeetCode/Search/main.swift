@@ -26,7 +26,7 @@ extension String {
 }
 
 
-test287findDuplicate()
+//test287findDuplicate()
 //test240searchMatrix()
 //test733FloodFill()
 //test278FirstBadVersion()
@@ -41,7 +41,7 @@ test287findDuplicate()
 
 // MARK: - 排列组合
 //test46Permute()
-//testCombine()
+testCombine()
 //testLetterCombinations()
 //test47PermuteUnique()
 //test78Subsets()
