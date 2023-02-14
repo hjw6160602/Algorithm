@@ -10,6 +10,24 @@ import Foundation
 
 extension Solution {
     
+    func deleteDuplicatesVS1(_ head: ListNode?) -> ListNode? {
+        var dummy = ListNode()
+        dummy.next = head
+        
+        var slow = head, fast = head
+        
+        while fast != nil {
+            if slow!.val != fast!.val {
+                slow!.next = fast
+                slow = slow!.next
+            }
+            fast = fast!.next
+        }
+        // 这个很重要 将链条断开
+        slow?.next = nil
+        return dummy.next
+        
+    }
     // 16 ms 100.00%
     // 13.8 MB 57.21%
     // 166 / 166
