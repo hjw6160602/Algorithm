@@ -16,7 +16,7 @@ class Solution {
     private init() {}
 }
 
-testminWindow()
+//testminWindow()
 //testTwoSum()
 
 //testStringRotation()
@@ -31,7 +31,7 @@ testminWindow()
 //testIsAnagram()
 //test03LengthOfLongestSubstring()
 //testMinDistance()
-//testLongestPalindrome()
+test05LongestPalindrome()
 //testIndexOf()
 //testRomanToInt()
 //testIsSubsequence()

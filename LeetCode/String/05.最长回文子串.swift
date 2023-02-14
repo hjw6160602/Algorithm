@@ -10,6 +10,35 @@ import Foundation
 
 extension Solution {
     
+    func longestPalindromeVS1(_ s: String) -> String {
+        let s = Array(s)
+        var res = [Character]()
+        
+        for i in 0..<s.count {
+            // 找到以 s[i] 为中心的回文串
+            let s1 = palindrome(s, left: i, right: i)
+            // 找到以 s[i] 和 s[i+1] 为中心的回文串
+            let s2 = palindrome(s, left: i, right: i+1)
+            // 更新答案
+            res = res.count > s1.count ? res : s1
+            res = res.count > s2.count ? res : s2
+        }
+        return String(res)
+    }
+    
+    // 在 s 中寻找以 s[l] 和 s[r] 为中心的最长回文串
+    private func palindrome(_ s: [Character],
+                            left: Int,
+                            right: Int) -> [Character] {
+        var l = left, r = right
+        while l >= 0 && r < s.count &&
+                s[l] == s[r] {
+            l -= 1
+            r += 1
+        }
+        return Array(s[l+1..<r])
+    }
+    
     // 扩展中心法 优于动态规划 时间O(n^2) 空间无
     func longestPalindrome(_ s: String) -> String {
         guard s.count > 1 else {
@@ -96,7 +125,7 @@ extension Solution {
                 }
                
                 dp[i][j] = true
-                
+                // 找到了最大长度 更新dp数组
                 if j - i + 1 > maxLen {
                     maxLen = j - i + 1
                     subSequence = s[i...j]
@@ -147,10 +176,10 @@ extension Solution {
 //  3 a        T
 //  4 d          T
 
-func testLongestPalindrome() {
+func test05LongestPalindrome() {
     
-//    let x = Solution.shared.longestPalindromeMLC("babad")
-//    print(x)
+    let x = Solution.shared.longestPalindromeVS1("babad")
+    print(x)
 }
 
 //给你一个字符串 s，找到 s 中最长的回文子串。
