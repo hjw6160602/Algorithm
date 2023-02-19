@@ -16,7 +16,8 @@ class Solution {
     private init() {}
 }
 
-test931minFallingPathSum()
+test712minimumDeleteSum()
+//test931minFallingPathSum()
 //test66constructArr()
 //test647CountSubstrings()
 //test221maximalSquare()

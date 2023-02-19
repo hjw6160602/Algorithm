@@ -204,6 +204,7 @@
 		CA8439BC299379FD00C24AC2 /* 304. 二维区域和检索 - 矩阵不可变.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439BB299379FD00C24AC2 /* 304. 二维区域和检索 - 矩阵不可变.swift */; };
 		CA8439BE299CC62F00C24AC2 /* 659.分割数组为连续子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439BD299CC62F00C24AC2 /* 659.分割数组为连续子序列.swift */; };
 		CA8439C0299FD58400C24AC2 /* 931. 下降路径最小和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439BF299FD58400C24AC2 /* 931. 下降路径最小和.swift */; };
+		CA8439C229A2056E00C24AC2 /* 712. 两个字符串的最小ASCII删除和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439C129A2056E00C24AC2 /* 712. 两个字符串的最小ASCII删除和.swift */; };
 		CA8C23C2287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C23C1287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift */; };
 		CA8C23C5287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C23C4287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift */; };
 		CA95817025E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95816F25E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift */; };
@@ -548,6 +549,7 @@
 		CA8439BB299379FD00C24AC2 /* 304. 二维区域和检索 - 矩阵不可变.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "304. 二维区域和检索 - 矩阵不可变.swift"; sourceTree = "<group>"; };
 		CA8439BD299CC62F00C24AC2 /* 659.分割数组为连续子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "659.分割数组为连续子序列.swift"; sourceTree = "<group>"; };
 		CA8439BF299FD58400C24AC2 /* 931. 下降路径最小和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "931. 下降路径最小和.swift"; sourceTree = "<group>"; };
+		CA8439C129A2056E00C24AC2 /* 712. 两个字符串的最小ASCII删除和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "712. 两个字符串的最小ASCII删除和.swift"; sourceTree = "<group>"; };
 		CA8C23C1287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "783.二叉搜索树节点最小距离.swift"; sourceTree = "<group>"; };
 		CA8C23C4287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "938. 二叉搜索树的范围和.swift"; sourceTree = "<group>"; };
 		CA95816F25E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1013.将数组分成和相等的三个部分.swift"; sourceTree = "<group>"; };
@@ -748,6 +750,7 @@
 				67D7CF4728C6330500DDEE4C /* 494. 目标和.swift */,
 				CA0DAA9329793DD700F880E9 /* 312. 戳气球.swift */,
 				CA8439BF299FD58400C24AC2 /* 931. 下降路径最小和.swift */,
+				CA8439C129A2056E00C24AC2 /* 712. 两个字符串的最小ASCII删除和.swift */,
 			);
 			path = DynamicPrograming;
 			sourceTree = "<group>";
@@ -1413,6 +1416,7 @@
 				CA5C2627286F4BB200836003 /* 746. 使用最小花费爬楼梯.swift in Sources */,
 				CA0DAA9429793DD700F880E9 /* 312. 戳气球.swift in Sources */,
 				67631DD128B6614200F29636 /* 221. 最大正方形.swift in Sources */,
+				CA8439C229A2056E00C24AC2 /* 712. 两个字符串的最小ASCII删除和.swift in Sources */,
 				CAB339A027F33FA1002A7776 /* 198. 打家劫舍.swift in Sources */,
 				67B98BAA288EC7F000B56E2D /* 152.乘积最大子数组.swift in Sources */,
 				CA23E6E125F527F50048115F /* 53.最大子序列和.swift in Sources */,
