@@ -150,7 +150,7 @@ extension BinaryTree: Traversal {
             if node != nil {
                 // 一路向左 将左边的节点入队
                 stack.append(node!)
-                node = node?.left
+                node = node!.left
             } else if stack.isEmpty{
                 return
             } else {
@@ -165,8 +165,30 @@ extension BinaryTree: Traversal {
     }
     
     func postorderTraversal(_ root: TreeNode?) {
-
+        guard root != nil else { return }
         
+        var stack = [TreeNode]()
+        stack.append(root!)
+        // 记录上一次弹出访问的节点
+        var prev = root
+        
+        while !stack.isEmpty {
+            var top = stack.last!
+            if (top.left == nil && top.right == nil) ||
+                (top.left === prev || top.right === prev) {
+                prev = stack.popLast()
+                traversalResult.append(prev!)
+            } else {
+                // 栈顶右边入栈
+                if let right = top.right {
+                    stack.append(right)
+                }
+                // 栈顶左边入栈
+                if let left = top.left {
+                    stack.append(left)
+                }
+            }
+        }
     }
     
     func bfs(root: TreeNode?) {

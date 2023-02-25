@@ -14,6 +14,32 @@ extension Solution {
         let max = dfs(root)
         return max
     }
+    
+//    20 ms 96.23%
+//    14.3 MB 77.36%
+    func maxDepthDfs(_ root: TreeNode?) -> Int {
+        guard root != nil else { return 0 }
+        
+        var node = root
+        var stack = [(TreeNode, Int)]()
+        // 记录上一次弹出访问的节点
+        var depth = 0, res = 0
+        
+        while !stack.isEmpty || node != nil {
+            while node != nil {
+                depth += 1
+                stack.append((node!, depth))
+                node = node!.left
+            }
+            var top = stack.popLast()!
+            depth = top.1
+            res = max(res, depth)
+            // 再往右走
+            node = top.0.right
+        }
+        return res
+    }
+    
     //    3
     //   / \
     //  9  20
