@@ -9,9 +9,9 @@
 import Foundation
 
 protocol Traversal {
-    func preorderTraversal(root node: TreeNode?)
-    func inorderTraversal(root node: TreeNode?)
-    func postorderTraversal(root node: TreeNode?)
+    func preorderTraversal(_ root: TreeNode?)
+    func inorderTraversal(_ root: TreeNode?)
+    func postorderTraversal(_ root: TreeNode?)
     
     func bfs(root: TreeNode?)
     func dfs(root: TreeNode?)
@@ -110,36 +110,42 @@ class BinaryTree {
 }
 
 extension BinaryTree: Traversal {
-    func preorderTraversal(root node: TreeNode?) {
-        guard node != nil else {
-            return
+//    0 ms 100%
+//    13.8 MB 69.68
+    func preorderTraversal(_ root: TreeNode?) {
+        guard root != nil else { return }
+         
+        var node = root
+        var stack = [TreeNode]()
+        
+        while true {
+            if node != nil {
+                // 访问 node 节点
+                traversalResult.append(node!)
+                // 将右子节点入栈
+                if node!.right != nil {
+                    stack.append(node!.right!)
+                }
+                // 一路向左
+                node = node!.left
+            } else if stack.isEmpty  {
+                // 如果栈为空 证明所有的节点访问完毕 return
+                return
+            } else {
+                // 处理右边 将右边的节点出栈 然后循环访问
+                node = stack.popLast()
+            }
         }
-        self.traversalResult.append(node!)
-        preorderTraversal(root: node!.left)
-        preorderTraversal(root: node!.right)
-//        if let node = node {
-//            self.traversalResult.append(node)
-//            preorderTraversal(root: node.left)
-//            preorderTraversal(root: node.right)
-//        }
     }
     
-    func inorderTraversal(root node: TreeNode?) {
-        guard node != nil else {
-            return
-        }
-        inorderTraversal(root: node!.left)
-        self.traversalResult.append(node!)
-        inorderTraversal(root: node!.right)
+    func inorderTraversal(_ root: TreeNode?) {
+
+        
     }
     
-    func postorderTraversal(root node: TreeNode?) {
-        guard node != nil else {
-            return
-        }
-        postorderTraversal(root: node!.left)
-        postorderTraversal(root: node!.right)
-        self.traversalResult.append(node!)
+    func postorderTraversal(_ root: TreeNode?) {
+
+        
     }
     
     func bfs(root: TreeNode?) {

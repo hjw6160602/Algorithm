@@ -30,8 +30,9 @@ class Solution {
             }
             fast = fast!.next
         }
+        // 这个很重要 将链条断开
+        slow?.next = nil
         return dummy.next
-
     }
 }
 

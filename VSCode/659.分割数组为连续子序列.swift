@@ -7,8 +7,11 @@
 // @lc code=start
 class Solution {
     func isPossible(_ nums: [Int]) -> Bool {
+        // freq 记录每个元素出现的次数
         var freq = [Int: Int]()
+        // need 记录哪些元素可以被接到其他子序列后面
         var need = [Int: Int]()
+        // 统计 nums 中元素的频率
         for num in nums {
             freq[num, default: 0] += 1
         }
@@ -31,6 +34,7 @@ class Solution {
                 // 对 v + 3 的需求加一
                 need[num+3, default: 0] += 1
             } else {
+                // 两种情况都不符合，则无法分配
                 return false
             }
         }

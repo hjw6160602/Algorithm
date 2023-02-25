@@ -6,6 +6,7 @@
 
 // @lc code=start
 class Solution {
+    // 左右指针
     func removeElementO1(_ nums: inout [Int], _ val: Int) -> Int {
         guard nums.count > 0 else { return 0 }
         var slow = 0, fast = nums.count - 1
@@ -28,6 +29,7 @@ class Solution {
         return (nums[slow] == val) ? slow : fast + 1
     }
 
+    // 快慢指针
     func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
         var fast = 0, slow = 0
         while fast < nums.count {

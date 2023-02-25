@@ -30,6 +30,8 @@ class Solution {
         guard var node = root else {
             return
         }
+        /**** 前序位置 ****/
+        // 每一个节点需要做的事就是交换它的左右子节点
         (node.left, node.right) = (node.right, node.left)
 
         traverse(node.left)
