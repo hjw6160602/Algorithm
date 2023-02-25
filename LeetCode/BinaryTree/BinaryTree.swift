@@ -138,9 +138,30 @@ extension BinaryTree: Traversal {
         }
     }
     
+//    0 ms 100%
+//    13.8 MB 66.83%
     func inorderTraversal(_ root: TreeNode?) {
-
+        guard root != nil else { return }
         
+        var node = root
+        var stack = [TreeNode]()
+        
+        while true {
+            if node != nil {
+                // 一路向左 将左边的节点入队
+                stack.append(node!)
+                node = node?.left
+            } else if stack.isEmpty{
+                return
+            } else {
+                // 如果没有左子树了 那么将这个节点给访问了
+                node = stack.popLast()
+                // 访问node节点
+                traversalResult.append(node!)
+                // 让右节点进行中序遍历
+                node = node!.right
+            }
+        }
     }
     
     func postorderTraversal(_ root: TreeNode?) {
