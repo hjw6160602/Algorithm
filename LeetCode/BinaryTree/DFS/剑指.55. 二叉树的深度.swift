@@ -23,6 +23,7 @@ extension Solution {
         var node = root
         var stack = [(TreeNode, Int)]()
         // 记录上一次弹出访问的节点
+        
         var depth = 0, res = 0
         
         while !stack.isEmpty || node != nil {

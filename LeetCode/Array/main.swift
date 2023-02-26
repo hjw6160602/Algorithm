@@ -17,7 +17,8 @@ class Solution {
     private init() {}
 }
 
-test304NumMatrix()
+test41firstMissingPositive()
+//test304NumMatrix()
 //test238productExceptSelf()
 //test48Rotate()
 //test15ThreeSum()

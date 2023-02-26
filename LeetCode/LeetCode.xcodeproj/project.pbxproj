@@ -205,6 +205,7 @@
 		CA8439BE299CC62F00C24AC2 /* 659.分割数组为连续子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439BD299CC62F00C24AC2 /* 659.分割数组为连续子序列.swift */; };
 		CA8439C0299FD58400C24AC2 /* 931. 下降路径最小和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439BF299FD58400C24AC2 /* 931. 下降路径最小和.swift */; };
 		CA8439C229A2056E00C24AC2 /* 712. 两个字符串的最小ASCII删除和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439C129A2056E00C24AC2 /* 712. 两个字符串的最小ASCII删除和.swift */; };
+		CA8439C429AB611100C24AC2 /* 41.缺失的第一个正数 .swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439C329AB611100C24AC2 /* 41.缺失的第一个正数 .swift */; };
 		CA8C23C2287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C23C1287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift */; };
 		CA8C23C5287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C23C4287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift */; };
 		CA95817025E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95816F25E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift */; };
@@ -550,6 +551,7 @@
 		CA8439BD299CC62F00C24AC2 /* 659.分割数组为连续子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "659.分割数组为连续子序列.swift"; sourceTree = "<group>"; };
 		CA8439BF299FD58400C24AC2 /* 931. 下降路径最小和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "931. 下降路径最小和.swift"; sourceTree = "<group>"; };
 		CA8439C129A2056E00C24AC2 /* 712. 两个字符串的最小ASCII删除和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "712. 两个字符串的最小ASCII删除和.swift"; sourceTree = "<group>"; };
+		CA8439C329AB611100C24AC2 /* 41.缺失的第一个正数 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "41.缺失的第一个正数 .swift"; sourceTree = "<group>"; };
 		CA8C23C1287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "783.二叉搜索树节点最小距离.swift"; sourceTree = "<group>"; };
 		CA8C23C4287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "938. 二叉搜索树的范围和.swift"; sourceTree = "<group>"; };
 		CA95816F25E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1013.将数组分成和相等的三个部分.swift"; sourceTree = "<group>"; };
@@ -922,6 +924,7 @@
 				67B8CD0B25E5FD090059D7B5 /* 15. 三数之和.swift */,
 				67C8F623260450D5009CEB1C /* 26.删除数组中的重复项.swift */,
 				CAC4ADA12811AE8B00F0FF9B /* 27. 移除元素.swift */,
+				CA8439C329AB611100C24AC2 /* 41.缺失的第一个正数 .swift */,
 				67B568A227C7BD4E003B6487 /* 42.接雨水.swift */,
 				CAC4AD9F2811A9E700F0FF9B /* 66. 加一.swift */,
 				CA23E70025FE48700048115F /* 75.颜色分类.swift */,
@@ -1563,6 +1566,7 @@
 				CAF523D527F8553100A62886 /* 35.搜索插入的位置.swift in Sources */,
 				CA95817025E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift in Sources */,
 				CA2243192890381F00332C01 /* 350. 两个数组的交集 II.swift in Sources */,
+				CA8439C429AB611100C24AC2 /* 41.缺失的第一个正数 .swift in Sources */,
 				CA5C2623286DEF3700836003 /* 605. 种花问题.swift in Sources */,
 				CAF523E12805508900A62886 /* 448.找到数组中消失的数字.swift in Sources */,
 				CAA7FB352810604300A2A3BE /* 169. 多数元素.swift in Sources */,
