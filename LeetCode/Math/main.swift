@@ -16,7 +16,7 @@ class Solution {
     private init() {}
 }
 
-testMissingNumber()
+//testMissingNumber()
 //test0101IsUnique()
 //test118Generate()
 //testMyPow()
@@ -30,7 +30,7 @@ testMissingNumber()
 //test371GetSum()
 //test461HammingDistance()
 //test119GetRow()
+test204CountPrimes()
 //test326IsPowerOfThree()
 //test191HammingWeight()
-//test204CountPrimes()
 //test338CountBits()

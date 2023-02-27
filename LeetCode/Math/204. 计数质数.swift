@@ -7,48 +7,91 @@
 //  https://leetcode.cn/problems/count-primes
 
 import Foundation
+func test204CountPrimes() {
+    let x = PrimesCount().countPrimes(5000000)
+    print(x)
+}
+
+class PrimesCount {
+    var primeList = [2, 3, 5, 7, 11, 13]
+
+    func countPrimes(_ n: Int) -> Int {
+        guard n > 2 else {
+            return 0
+        }
+        var res = 0
+        for prime in primeList {
+            guard prime < n else {
+                return res
+            }
+            res += 1
+        }
+        let tailPrime = primeList.last!
+        for i in tailPrime+1..<n {
+            if isPrime(i) {
+                primeList.append(i)
+                res += 1
+            }
+        }
+        return res
+    }
+
+    private func isPrime(_ n: Int) -> Bool {
+        // 除数最大试到n / 3
+        var maxDiv = Int(sqrt(Double(n)))
+        let tailPrime = primeList.last!
+        if n < tailPrime {
+            for prime in primeList {
+                if prime == n {
+                    return true
+                }
+            }
+        }
+        for i in 2...maxDiv {
+            let res = n / i
+            // 不用区域运算而是用是否相乘后刚好等于n
+            if res * i == n {
+                return false
+            }
+        }
+        return true
+    }
+}
 
 extension Solution {
     func countPrimes(_ n: Int) -> Int {
-        guard n > 1 else { return 0 }
+        guard n > 2 else {
+            return 0
+        }
+        
+        // init isPrime bool array
         var isPrime = Array(repeating: true, count: n)
-        for i in 2..<n {
-            // 从2 开始去找因数
-            var j = 2
-            while j * j <= i {
-                // 如果不能整除那么直接 continue
-                guard i % j == 0 else {
-                    j += 1
-                    continue
-                }
-                // 来到这里证明找到了因数 j
-                isPrime[i] = false
-                var k = j * 2
-                while k < n {
-                    // 将后面数组中所有该因数的倍数全部标记为false
-                    isPrime[i] = false
-                    k += k
-                }
-                j += 1
+        isPrime[0] = false
+        isPrime[1] = false
+        
+        // count prime number
+        var count = 0
+        for num in 2..<n {
+            guard isPrime[num] else {
+                continue
+            }
+            
+            count += 1
+            // 如果当前是素数
+            var nextNum = num * num
+            // 就把从 i*i 开始，i 的所有倍数都设置为 false。
+            while nextNum < n {
+                isPrime[nextNum] = false
+                nextNum += num
             }
         }
-        // 计数器找到当前数组中所有质数的个数
-        var count = 0
-//        var x = "\(n) 的质因数："
-        for index in 2..<n where isPrime[index] {
-//            x.append("\(index),")
-            count += 1
-        }
-//        print(x)
+        
         return count
     }
 }
 
 
-func test204CountPrimes() {
-    let x = LeetCode.countPrimes(5000000)
-    print(x)
-}
+
 
 //给定整数 n ，返回 所有小于非负整数 n 的质数的数量 。
 //
