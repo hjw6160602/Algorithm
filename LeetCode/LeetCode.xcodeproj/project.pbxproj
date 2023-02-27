@@ -207,6 +207,7 @@
 		CA8439C229A2056E00C24AC2 /* 712. 两个字符串的最小ASCII删除和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439C129A2056E00C24AC2 /* 712. 两个字符串的最小ASCII删除和.swift */; };
 		CA8439C429AB611100C24AC2 /* 41.缺失的第一个正数 .swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439C329AB611100C24AC2 /* 41.缺失的第一个正数 .swift */; };
 		CA8439C629AC915B00C24AC2 /* 103. 二叉树的锯齿形层序遍历.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439C529AC915B00C24AC2 /* 103. 二叉树的锯齿形层序遍历.swift */; };
+		CA8439C829ACEBA500C24AC2 /* 394. 字符串解码 .swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439C729ACEBA500C24AC2 /* 394. 字符串解码 .swift */; };
 		CA8C23C2287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C23C1287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift */; };
 		CA8C23C5287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C23C4287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift */; };
 		CA95817025E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95816F25E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift */; };
@@ -554,6 +555,7 @@
 		CA8439C129A2056E00C24AC2 /* 712. 两个字符串的最小ASCII删除和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "712. 两个字符串的最小ASCII删除和.swift"; sourceTree = "<group>"; };
 		CA8439C329AB611100C24AC2 /* 41.缺失的第一个正数 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "41.缺失的第一个正数 .swift"; sourceTree = "<group>"; };
 		CA8439C529AC915B00C24AC2 /* 103. 二叉树的锯齿形层序遍历.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "103. 二叉树的锯齿形层序遍历.swift"; sourceTree = "<group>"; };
+		CA8439C729ACEBA500C24AC2 /* 394. 字符串解码 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "394. 字符串解码 .swift"; sourceTree = "<group>"; };
 		CA8C23C1287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "783.二叉搜索树节点最小距离.swift"; sourceTree = "<group>"; };
 		CA8C23C4287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "938. 二叉搜索树的范围和.swift"; sourceTree = "<group>"; };
 		CA95816F25E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1013.将数组分成和相等的三个部分.swift"; sourceTree = "<group>"; };
@@ -723,6 +725,7 @@
 				CA1D75DD25E7E36500CD2432 /* 749.每日温度.swift */,
 				67B1744E25F8966500F27D40 /* 20.有效的括号.swift */,
 				67E0BDCE286ED7F10066A653 /* 496. 下一个更大元素 I.swift */,
+				CA8439C729ACEBA500C24AC2 /* 394. 字符串解码 .swift */,
 			);
 			path = Stack.Queue;
 			sourceTree = "<group>";
@@ -1401,6 +1404,7 @@
 				67B57D0425CC208300814C1A /* 155.最小栈.swift in Sources */,
 				CA1D75DE25E7E36500CD2432 /* 749.每日温度.swift in Sources */,
 				67B57CEB25CC205400814C1A /* main.swift in Sources */,
+				CA8439C829ACEBA500C24AC2 /* 394. 字符串解码 .swift in Sources */,
 				67B1744F25F8966500F27D40 /* 20.有效的括号.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

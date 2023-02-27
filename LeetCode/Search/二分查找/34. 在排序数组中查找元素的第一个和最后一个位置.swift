@@ -8,45 +8,67 @@
 
 import Foundation
 
+func test34SearchRange() {
+//    let nums = [5,7,7,8,8,10], target = 6
+//    let nums = [2,2], target = 2
+//    let nums = [1], target = 1
+//    let nums = [Int](), target = 0
+    let nums = [1,2,2], target = 2
+//    let nums = [1,2,3,3,3,3,4,5,9], target = 3
+    let x = LeetCode.searchRange(nums, target)
+    print(x)
+}
+
 extension Solution {
+//    64 ms 5.43%
+//    14.7 MB 94.56%
+    // 细节是魔鬼 啊
     func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
-        var res = [-1, -1]
+        let res = [-1, -1]
         
-        var l = 0, r = nums.count - 1
-        var m = -1, n = -1
-        var mid = (l + r) >> 1
-        while l <= r {
-            guard nums[mid] != target else {
-                m = mid
-                n = mid
-                break
-            }
-            if nums[mid] < target {
-                l = mid + 1
+        var l = 0, r = nums.count
+        // 区间左闭右开[l, r)
+        while l < r {
+            let mid = l + (r - l) >> 1
+            if nums[mid] == target {
+                // 已经找到了 数组中的数字
+                // 相等的时候要分别再去寻找左右边界
+                var lm =  mid, rm =  mid
+                while l < lm {
+                    let tmp = l + (lm - l) >> 1
+                    if nums[tmp] != target {
+                        l = tmp + 1
+                    } else {
+                        lm = tmp
+                    }
+                }
+                
+                while rm < r {
+                    // rm 如果直接取中值会在 r = rm + 1 的时候永远无法降低 所以需要/2 + 1
+                    let tmp =  rm + (r - rm) >> 1 + 1
+                    // 防止数组越界 在这种时候将r降下来
+                    if tmp >= nums.count {
+                        r = r - 1
+                        continue
+                    }
+                    if nums[tmp] != target {
+                        r = tmp - 1
+                    } else {
+                        rm = tmp
+                    }
+                }
+                return [lm, rm]
             } else if nums[mid] > target {
-                r = mid - 1
+                r = mid
+            } else if nums[mid] < target {
+                l = mid + 1
             }
-            mid = (l + r) >> 1
         }
-        while m > 0 && nums[m - 1] == target {
-            m -= 1
-        }
-        while n >= 0 && n < nums.count && (nums[n] == target) {
-            n += 1
-        }
-        
-        res = [m, n]
         return res
     }
 }
 
-func test34SearchRange() {
-//    let nums = [5,7,7,8,8,10], target = 6
-    let nums = [2,2], target = 2
-//    let nums = [1], target = 1
-    let x = LeetCode.searchRange(nums, target)
-    print(x)
-}
+
 
 //给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。
 //如果数组中不存在目标值 target，返回 [-1, -1]。

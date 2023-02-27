@@ -14,10 +14,11 @@ class Solution {
     private init() {}
 }
 
+test394decodeString()
 //testSlideWindow()
 //testMinStack()
 //testDailyTemperatures()
-testIsValidBracket()
+//testIsValidBracket()
 //testMaxSlidingWindow()
 //testDailyTemperatures()
 //test496NextGreaterElement()
