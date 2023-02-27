@@ -17,7 +17,7 @@ class Solution {
     private init() {}
 }
 
-test41firstMissingPositive()
+//test41firstMissingPositive()
 //test304NumMatrix()
 //test238productExceptSelf()
 //test48Rotate()

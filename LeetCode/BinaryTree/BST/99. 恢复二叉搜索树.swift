@@ -82,14 +82,14 @@ class RecoverBinarySearchTree {
 }
 
 func testRecoverTree() {
-    let re = RecoverBinarySearchTree()
-    let bt = BinaryTree()
-    let root = bt.initWithArray(["3","1","4","null","null","2"])
-    
-    re.recoverTreeP1(root)
-    bt.inorderTraversal(root: bt.head)
-    let res = bt.traversalResult.map{$0.val}
-    print(res)
+//    let re = RecoverBinarySearchTree()
+//    let bt = BinaryTree()
+//    let root = bt.initWithArray(["3","1","4","null","null","2"])
+//    
+//    re.recoverTreeP1(root)
+//    bt.inorderTraversal(root: bt.head)
+//    let res = bt.traversalResult.map{$0.val}
+//    print(res)
     
 }
 

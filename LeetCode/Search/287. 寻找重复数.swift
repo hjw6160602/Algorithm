@@ -8,7 +8,32 @@
 
 import Foundation
 
+func test287findDuplicate() {
+//    let nums = [1,3,4,2,2]
+    let nums = [3,1,3,4,2]
+    let x = LeetCode.findDuplicate(nums)
+    print(x)
+}
+
 extension Solution {
+//    612 ms 40%
+//    18.1 MB 35%
+    func findDuplicate(_ nums: [Int]) -> Int {
+        var nums = nums
+        var i = 0
+        while i < nums.count {
+            var target = nums[i]
+            while target != i  {
+                if target == nums[target] {
+                    return target
+                }
+                nums.swapAt(target, i)
+                target = nums[i]
+            }
+            i += 1
+        }
+        return nums[0]
+    }
     
 //    620 ms 59.42%
 //    18.3 MB 10.14%
@@ -20,7 +45,7 @@ extension Solution {
 //    根据「Floyd 判圈算法」两个指针在有环的情况下一定会相遇，
 //    此时我们再将slow 放置起点 0，两个指针每次同时移动一步，相遇的点就是答案
     
-    func findDuplicate(_ nums: [Int]) -> Int {
+    func findDuplicateLeetcode(_ nums: [Int]) -> Int {
         var slow = 0, fast = 0
 //      每个位置连一条 i ~→ nums[i] 的边
         repeat {
@@ -76,12 +101,6 @@ extension Solution {
         }
         return 0
     }
-}
-
-func test287findDuplicate() {
-    let nums = [1,3,4,2,2]
-    let x = LeetCode.findDuplicate(nums)
-    print(x)
 }
 
 //给定一个包含 n + 1 个整数的数组 nums ，其数字都在 [1, n] 范围内（包括 1 和 n），可知至少存在一个重复的整数。

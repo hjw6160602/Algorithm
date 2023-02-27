@@ -15,6 +15,7 @@ class Solution {
     private init() {}
 }
 
+test103zigzagLevelOrder()
 //testlowesTCommonAncestor()
 //testRecoverTree()
 //testMaxDepth()
@@ -40,7 +41,7 @@ class Solution {
 //test208Trie()
 
 // MARK: - BFS
-test297Codec()
+//test297Codec()
 //test102levelOrder()
 //test107LevelOrderBottom()
 
