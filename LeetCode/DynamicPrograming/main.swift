@@ -15,8 +15,8 @@ class Solution {
     
     private init() {}
 }
-
-test712minimumDeleteSum()
+test10isMatch()
+//test712minimumDeleteSum()
 //test931minFallingPathSum()
 //test66constructArr()
 //test647CountSubstrings()

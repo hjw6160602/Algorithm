@@ -118,6 +118,7 @@
 		67FAFA81276237FD003C357F /* 16.16.部分排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FAFA80276237FD003C357F /* 16.16.部分排序.swift */; };
 		67FAFA8327633451003C357F /* 977.独立数组的平方.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FAFA8227633451003C357F /* 977.独立数组的平方.swift */; };
 		67FDD8E0276059A00004D5E4 /* 283.零移动.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDD8DF276059A00004D5E4 /* 283.零移动.swift */; };
+		808FD01B29AE566300684E6F /* 10. 正则表达式匹配.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808FD01A29AE566300684E6F /* 10. 正则表达式匹配.swift */; };
 		80A0D37328884F0A0049567C /* 47. 全排列II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B8CDDB25E795FC0059D7B5 /* 47. 全排列II.swift */; };
 		80A0D37628884F200049567C /* 31.下一个排列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E393C92888065300B4F252 /* 31.下一个排列.swift */; };
 		80F2C03E25DE46400051398B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F2C03D25DE46400051398B /* main.swift */; };
@@ -461,6 +462,7 @@
 		67FDD8DF276059A00004D5E4 /* 283.零移动.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "283.零移动.swift"; sourceTree = "<group>"; };
 		801B2D46226CC182008E7CAB /* BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		801B2D47226CC182008E7CAB /* TreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		808FD01A29AE566300684E6F /* 10. 正则表达式匹配.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "10. 正则表达式匹配.swift"; sourceTree = "<group>"; };
 		80F2C03B25DE46400051398B /* Array */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Array; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F2C03D25DE46400051398B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		80F2C05525DE466B0051398B /* 242.有效的字母异位词.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "242.有效的字母异位词.swift"; sourceTree = "<group>"; };
@@ -758,6 +760,7 @@
 				CA0DAA9329793DD700F880E9 /* 312. 戳气球.swift */,
 				CA8439BF299FD58400C24AC2 /* 931. 下降路径最小和.swift */,
 				CA8439C129A2056E00C24AC2 /* 712. 两个字符串的最小ASCII删除和.swift */,
+				808FD01A29AE566300684E6F /* 10. 正则表达式匹配.swift */,
 			);
 			path = DynamicPrograming;
 			sourceTree = "<group>";
@@ -1419,6 +1422,7 @@
 				CA09E96028BD10D50034CB57 /* 剑指 Offer 66. 构建乘积数组.swift in Sources */,
 				67B57D3425CC251C00814C1A /* main.swift in Sources */,
 				80F2C34E25DE6B860051398B /* 62. 不同路径.swift in Sources */,
+				808FD01B29AE566300684E6F /* 10. 正则表达式匹配.swift in Sources */,
 				CA8439C0299FD58400C24AC2 /* 931. 下降路径最小和.swift in Sources */,
 				CA224309288AEEEE00332C01 /* 416. 分割等和子集.swift in Sources */,
 				80F2C34225DE6B720051398B /* 64. 最小路径和.swift in Sources */,
