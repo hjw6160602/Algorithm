@@ -15,6 +15,8 @@ func test10isMatch() {
 }
 
 class SolutionMatch {
+//    4 ms 97.22%
+//    14.3 MB 5.55%
     func isMatch(_ s: String, _ p: String) -> Bool {
         return dp(Array(s), 0, Array(p), 0)
     }
