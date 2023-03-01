@@ -8,32 +8,89 @@
 
 import Foundation
 
+func test62uniquePaths() {
+    let m = 3, n = 3
+    let x = LeetCode.uniquePaths3(m, n)
+    print(x)
+}
+
 extension Solution {
-    // 超出时间限制
-    func uniquePaths(_ m: Int, _ n: Int) -> Int {
-        var path = 0
-        _dfs(0, 0, m, n, path: &path)
-        return path
+//    0 ms 100%
+//    13.5 MB 45.45%
+    func uniquePaths3(_ m: Int, _ n: Int) -> Int {
+        var dp = Array(repeating:1, count:n)
+        for _ in 1..<m {
+            var left = 1
+            for j in 1..<n {
+                let cur = dp[j] + left
+                left = cur
+                dp[j] = cur
+            }
+        }
+        return dp[n-1]
     }
     
-    private func _dfs(_ i: Int, _ j: Int, _ m: Int, _ n: Int, path: inout Int) {
-        guard i < m && j < n else {
+    //    0 ms 100%
+    //    13.6 MB 22.73%
+    func uniquePaths2(_ m: Int, _ n: Int) -> Int {
+        var dp = Array(repeating: Array(repeating:0, count:n),
+                       count: m)
+        for i in 0..<m { dp[i][0] = 1 }
+        for j in 0..<n { dp[0][j] = 1 }
+        
+        for i in 1..<m {
+            for j in 1..<n {
+                dp[i][j] = dp[i-1][j] + dp[i][j-1]
+            }
+        }
+        return dp[m-1][n-1]
+    }
+    
+    func uniquePaths(_ m: Int, _ n: Int) -> Int {
+        guard m > 1 && n > 1 else {
+            return 1
+        }
+        var dp = Array(repeating: Array(repeating:0, count:n + 1),
+                       count: m + 1)
+        for i in 1...m { dp[i][1] = 1 }
+        for j in 1...n { dp[1][j] = 1 }
+        
+        for i in 2...m {
+            for j in 2...n {
+                dp[i][j] = dp[i-1][j] + dp[i][j-1]
+            }
+        }
+        return dp[m][n]
+    }
+    
+    
+    // 超出时间限制
+    func uniquePathsOOT(_ m: Int, _ n: Int) -> Int {
+        var res = 0
+        backtrace(m, n, 0, 0, &res)
+        return res
+    }
+    
+    private func backtrace(_ m: Int, _ n: Int,
+                           _ x: Int, _ y: Int,
+                           _ res: inout Int) {
+        // 越界判断
+        guard x < m && y < n else { return }
+        // base case
+        if (x, y) == (m - 1, n - 1) {
+            res += 1
             return
         }
-        if i == m - 1 && j == n - 1 {
-            path += 1
-            return
-        }
-        _dfs(i + 1, j, m, n, path: &path)
-        _dfs(i, j + 1, m, n, path: &path)
+        
+        // 向右
+        backtrace(m, n, x, y + 1, &res)
+        
+        // 向下
+        backtrace(m, n, x + 1, y, &res)
+        
     }
 }
 
-func testUniquePaths() {
-    let m = 3, n = 3
-    let x = LeetCode.uniquePaths(m, n)
-    print(x)
-}
 
 
 //一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为 “Start” ）。

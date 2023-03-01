@@ -14,8 +14,10 @@ class Solution {
         }
         let n = nums.count
         var dp = Array.init(repeating: 0, count: n + 1)
+        // 由于从2开始遍历所以这里将dp[1]直接复制为nums[0]
         dp[1] = nums[0]
         for i in 2...nums.count {
+            // 从索引2开始遍历 是为了统一动态转移方程
             dp[i] = max(dp[i-1], nums[i-1] + dp[i-2])
         }
         return dp[n]

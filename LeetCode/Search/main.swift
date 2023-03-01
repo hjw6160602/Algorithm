@@ -25,6 +25,7 @@ extension String {
     }
 }
 
+test62uniquePaths()
 //test287findDuplicate()
 //test240searchMatrix()
 //test733FloodFill()
@@ -33,7 +34,7 @@ extension String {
 //test4findMedianSortedArrays()
 //test200NumIslands()
 //test34SearchRange()
-//testUniquePaths()
+
 //test39CombinationSum()
 //test79Exist()
 

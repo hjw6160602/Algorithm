@@ -65,7 +65,7 @@ extension Solution {
 }
 
 func testRob() {
-    let res = LeetCode.robSwift([1,2,3,1])
+    let res = LeetCode.rob([1,2,3,1])
     print(res)
 }
 
