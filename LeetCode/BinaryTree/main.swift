@@ -15,7 +15,8 @@ class Solution {
     private init() {}
 }
 
-test103zigzagLevelOrder()
+test110isisBalanced()
+//test103zigzagLevelOrder()
 //testlowesTCommonAncestor()
 //testRecoverTree()
 //testMaxDepth()
