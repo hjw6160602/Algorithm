@@ -11,10 +11,24 @@ import Foundation
 
 extension Solution {
     
+    // 4 ms  67.47%
+    // 13.7 MB 85.54%
+    func rob(_ nums: [Int]) -> Int {
+        guard nums.count > 1 else {
+            return nums[0]
+        }
+        let n = nums.count
+        var dp = Array.init(repeating: 0, count: n + 1)
+        dp[1] = nums[0]
+        for i in 2...nums.count {
+            dp[i] = max(dp[i-1], nums[i-1] + dp[i-2])
+        }
+        return dp[n]
+    }
+    
 //    4 ms 75.00%
 //    13.7 MB 62.74% 68 / 68
-
-    func rob(_ nums: [Int]) -> Int {
+    func robOld(_ nums: [Int]) -> Int {
         guard nums.count > 0 else { return 0 }
         
         var robbed = nums[0], clear = 0
@@ -39,8 +53,7 @@ extension Solution {
 //    4 ms 75.00%
 //    14 MB  9.80%
 //    68 / 68
-
-    func robSwift(_ nums: [Int]) -> Int {
+    func robSoap(_ nums: [Int]) -> Int {
         var curt = 0, prev = 0
         
         for num in nums {
