@@ -22,7 +22,9 @@
  */
 
 class Solution {
-    func rob(_ node: TreeNode?) -> Int {
+    //    44 ms 25%
+    //    14.4 MB 94.44%
+    func rob(_ root: TreeNode?) -> Int {
         let res = dp(root)
         return max(res[0], res[1])
     }
@@ -30,8 +32,8 @@ class Solution {
     /* 返回一个大小为 2 的数组 arr
        arr[0] 表示不抢 root 的话，得到的最大钱数
        arr[1] 表示抢 root 的话，得到的最大钱数 */
-    private func dp(_ node: TreeNode?) -> [Int] {
-        guard let node = node else {
+    private func dp(_ root: TreeNode?) -> [Int] {
+        guard let node = root else {
             return [0, 0]
         }
         let left = dp(node.left)
@@ -41,7 +43,7 @@ class Solution {
         // 不抢，下家可抢可不抢，取决于收益大小
         let notRob = max(left[0], left[1]) + max(right[0], right[1])
          
-        return [rob, notRob]
+        return [notRob, rob]
     }
 }
 
@@ -62,8 +64,8 @@ class SolutionRob {
 //    15.1 MB 19.44%
     var memo = [TreeNode: Int]()
 
-    func rob(_ node: TreeNode?) -> Int {
-        guard let node = node else {
+    func rob(_ root: TreeNode?) -> Int {
+        guard let node = root else {
             return 0
         }
         if let res = memo[node] {
