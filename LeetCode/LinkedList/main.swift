@@ -15,7 +15,8 @@ class Solution {
     private init() {}
 }
 
-testPartition()
+test0205addTwoNumbers()
+//testPartition()
 //test25EqualNode()
 //test148sortList()
 // 两数之和

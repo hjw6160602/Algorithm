@@ -17,6 +17,7 @@ class Solution {
     private init() {}
 }
 
+test621leastInterval()
 //test41firstMissingPositive()
 //test304NumMatrix()
 //test238productExceptSelf()

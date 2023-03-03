@@ -212,6 +212,8 @@
 		CA8C23C2287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C23C1287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift */; };
 		CA8C23C5287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8C23C4287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift */; };
 		CA95817025E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95816F25E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift */; };
+		CA99150E29B1FB7C009DDAF5 /* 面试题 02.05. 链表求和 .swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99150D29B1FB7C009DDAF5 /* 面试题 02.05. 链表求和 .swift */; };
+		CA99151029B25132009DDAF5 /* [621] 任务调度器.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99150F29B25132009DDAF5 /* [621] 任务调度器.swift */; };
 		CAA621D127F756AE0010E814 /* 28.实现strStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA621D027F756AE0010E814 /* 28.实现strStr.swift */; };
 		CAA7FB352810604300A2A3BE /* 169. 多数元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7FB342810604200A2A3BE /* 169. 多数元素.swift */; };
 		CAADBC3C25F3487F0080BFBA /* 1143.最长公共子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAADBC3B25F3487F0080BFBA /* 1143.最长公共子序列.swift */; };
@@ -561,6 +563,8 @@
 		CA8C23C1287F0B4C005D40A0 /* 783.二叉搜索树节点最小距离.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "783.二叉搜索树节点最小距离.swift"; sourceTree = "<group>"; };
 		CA8C23C4287F1538005D40A0 /* 938. 二叉搜索树的范围和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "938. 二叉搜索树的范围和.swift"; sourceTree = "<group>"; };
 		CA95816F25E0E76600F859B6 /* 1013.将数组分成和相等的三个部分.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1013.将数组分成和相等的三个部分.swift"; sourceTree = "<group>"; };
+		CA99150D29B1FB7C009DDAF5 /* 面试题 02.05. 链表求和 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题 02.05. 链表求和 .swift"; sourceTree = "<group>"; };
+		CA99150F29B25132009DDAF5 /* [621] 任务调度器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "[621] 任务调度器.swift"; sourceTree = "<group>"; };
 		CAA621D027F756AE0010E814 /* 28.实现strStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "28.实现strStr.swift"; sourceTree = "<group>"; };
 		CAA7FB342810604200A2A3BE /* 169. 多数元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "169. 多数元素.swift"; sourceTree = "<group>"; };
 		CAADBC3B25F3487F0080BFBA /* 1143.最长公共子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1143.最长公共子序列.swift"; sourceTree = "<group>"; };
@@ -698,22 +702,23 @@
 				67BDD5802885876F00884306 /* 19. 删除链表的倒数第 N 个结点.swift */,
 				67BC54E225F61FAC006F2471 /* 21. 合并两个有序链表.swift */,
 				67BF3E91287C3FCD0033A69C /* 23. 合并K个升序链表.swift */,
+				67E3EFB2293DFB9A005682C8 /* 25. K 个一组翻转链表.swift */,
 				CAF523DB27FEDDE000A62886 /* 83.删除排序链表中的重复元素.swift */,
 				67ACEB0625CAD8B3009C53EE /* 86. 分隔链表.swift */,
 				67ACEB7725CAE013009C53EE /* 138.复制带随机指针的链表.swift */,
 				67B57C4525CB9CFF00814C1A /* 141.环形链表.swift */,
 				67631DCA28B3758800F29636 /* 142.环形链表II.swift */,
 				CA2242FD2885A33900332C01 /* 146.LRU缓存.swift */,
+				67631DCC28B3B88000F29636 /* 148. 排序链表.swift */,
 				67ACEB1D25CAD8D0009C53EE /* 160.交叉链表.swift */,
 				67ACEB3425CAD922009C53EE /* 203.移除链表元素.swift */,
 				67B57C8425CB9D5000814C1A /* 206.翻转链表.swift */,
 				67ACEB4B25CADA5C009C53EE /* 234.回文链表.swift */,
 				CA45D7A82896DADF00436EFB /* 237. 删除链表中的节点.swift */,
-				67B8CD1F25E6351B0059D7B5 /* 16.25 LRUCache.swift */,
 				CA224311288C43D000332C01 /* 剑指 Offer 24. 反转链表.swift */,
 				CA22432128941A2A00332C01 /* 剑指 Offer 22. 链表中倒数第k个节点.swift */,
-				67631DCC28B3B88000F29636 /* 148. 排序链表.swift */,
-				67E3EFB2293DFB9A005682C8 /* 25. K 个一组翻转链表.swift */,
+				67B8CD1F25E6351B0059D7B5 /* 16.25 LRUCache.swift */,
+				CA99150D29B1FB7C009DDAF5 /* 面试题 02.05. 链表求和 .swift */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -966,6 +971,7 @@
 				67631DCE28B510BA00F29636 /* 238. 除自身以外数组的乘积.swift */,
 				CA8439BB299379FD00C24AC2 /* 304. 二维区域和检索 - 矩阵不可变.swift */,
 				CA8439BD299CC62F00C24AC2 /* 659.分割数组为连续子序列.swift */,
+				CA99150F29B25132009DDAF5 /* [621] 任务调度器.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -1390,6 +1396,7 @@
 				67BC54E325F61FAC006F2471 /* 21. 合并两个有序链表.swift in Sources */,
 				676E880625C98F2200E52125 /* ListNode.swift in Sources */,
 				67B57C4625CB9CFF00814C1A /* 141.环形链表.swift in Sources */,
+				CA99150E29B1FB7C009DDAF5 /* 面试题 02.05. 链表求和 .swift in Sources */,
 				CA22432228941A2A00332C01 /* 剑指 Offer 22. 链表中倒数第k个节点.swift in Sources */,
 				67ACEB1E25CAD8D0009C53EE /* 160.交叉链表.swift in Sources */,
 				67631DCB28B3758800F29636 /* 142.环形链表II.swift in Sources */,
@@ -1598,6 +1605,7 @@
 				80F2C03E25DE46400051398B /* main.swift in Sources */,
 				67C8F624260450D5009CEB1C /* 26.删除数组中的重复项.swift in Sources */,
 				CAB339BE27F5FF85002A7776 /* 38.外观数列.swift in Sources */,
+				CA99151029B25132009DDAF5 /* [621] 任务调度器.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
