@@ -38,7 +38,7 @@ public class UF {
     }
     
     // 判断节点 p 和节点 q 是否连通
-    public func connected(p: Int, q: Int) -> Bool {
+    public func isConnected(p: Int, q: Int) -> Bool {
         let rootP = find(q)
         let rootQ = find(q)
         return rootP == rootQ
@@ -52,4 +52,39 @@ public class UF {
         return parent[x]
     }
     
+}
+
+class UF2 {
+    ///
+    var parent = [Int]()
+    
+    init(_ count: Int) {
+        parent = Array.init(repeating: 0, count: count)
+        for i in 0..<count {
+            parent[i] = i
+        }
+    }
+    
+    func union(p: Int, q: Int) {
+        let rootP = find(p)
+        let rootQ = find(q)
+        if rootP == rootQ {
+            return
+        }
+        parent[rootP] = rootQ
+    }
+    
+    func isConnected(p: Int, q: Int) -> Bool {
+        let rootP = find(p)
+        let rootQ = find(q)
+        return rootP == rootQ
+    }
+    
+    /// 动态压缩路径
+    func find(_ x: Int) -> Int {
+        if parent[x] != x  {
+            parent[x] = find(parent[x])
+        }
+        return parent[x]
+    }
 }

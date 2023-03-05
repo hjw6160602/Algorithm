@@ -217,6 +217,8 @@
 		CA99151A29B33F6E009DDAF5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99151929B33F6E009DDAF5 /* main.swift */; };
 		CA99151E29B33F76009DDAF5 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99151129B33F1F009DDAF5 /* UnionFind.swift */; };
 		CA99152029B34AB4009DDAF5 /* 399. 除法求值 .swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99151F29B34AB4009DDAF5 /* 399. 除法求值 .swift */; };
+		CA99152229B48197009DDAF5 /* 990.等式方程的可满足性.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99152129B48197009DDAF5 /* 990.等式方程的可满足性.swift */; };
+		CA99152429B48BAD009DDAF5 /* 547. 省份数量 .swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99152329B48BAD009DDAF5 /* 547. 省份数量 .swift */; };
 		CAA621D127F756AE0010E814 /* 28.实现strStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA621D027F756AE0010E814 /* 28.实现strStr.swift */; };
 		CAA7FB352810604300A2A3BE /* 169. 多数元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7FB342810604200A2A3BE /* 169. 多数元素.swift */; };
 		CAADBC3C25F3487F0080BFBA /* 1143.最长公共子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAADBC3B25F3487F0080BFBA /* 1143.最长公共子序列.swift */; };
@@ -581,6 +583,8 @@
 		CA99151729B33F6E009DDAF5 /* 图 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "图"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA99151929B33F6E009DDAF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CA99151F29B34AB4009DDAF5 /* 399. 除法求值 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "399. 除法求值 .swift"; sourceTree = "<group>"; };
+		CA99152129B48197009DDAF5 /* 990.等式方程的可满足性.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "990.等式方程的可满足性.swift"; sourceTree = "<group>"; };
+		CA99152329B48BAD009DDAF5 /* 547. 省份数量 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "547. 省份数量 .swift"; sourceTree = "<group>"; };
 		CAA621D027F756AE0010E814 /* 28.实现strStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "28.实现strStr.swift"; sourceTree = "<group>"; };
 		CAA7FB342810604200A2A3BE /* 169. 多数元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "169. 多数元素.swift"; sourceTree = "<group>"; };
 		CAADBC3B25F3487F0080BFBA /* 1143.最长公共子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1143.最长公共子序列.swift"; sourceTree = "<group>"; };
@@ -1142,6 +1146,8 @@
 				CA99151929B33F6E009DDAF5 /* main.swift */,
 				CA99151129B33F1F009DDAF5 /* UnionFind.swift */,
 				CA99151F29B34AB4009DDAF5 /* 399. 除法求值 .swift */,
+				CA99152129B48197009DDAF5 /* 990.等式方程的可满足性.swift */,
+				CA99152329B48BAD009DDAF5 /* 547. 省份数量 .swift */,
 			);
 			path = "图";
 			sourceTree = "<group>";
@@ -1742,7 +1748,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA99152229B48197009DDAF5 /* 990.等式方程的可满足性.swift in Sources */,
 				CA99151E29B33F76009DDAF5 /* UnionFind.swift in Sources */,
+				CA99152429B48BAD009DDAF5 /* 547. 省份数量 .swift in Sources */,
 				CA99151A29B33F6E009DDAF5 /* main.swift in Sources */,
 				CA99152029B34AB4009DDAF5 /* 399. 除法求值 .swift in Sources */,
 			);

@@ -16,5 +16,7 @@ class Solution {
     private init() {}
 }
 
-test399calcEquation()
+//test399calcEquation()
+test547FindCircleNum()
+//test990equationsPossible()
 
