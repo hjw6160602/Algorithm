@@ -14,7 +14,7 @@ class Solution {
     private init() {}
 }
 
-test394decodeString()
+//test394decodeString()
 //testSlideWindow()
 //testMinStack()
 //testDailyTemperatures()
@@ -22,6 +22,7 @@ test394decodeString()
 //testMaxSlidingWindow()
 //testDailyTemperatures()
 //test496NextGreaterElement()
+test1541minInsertions()
 
 private func testMinStack() {
     let minStack = MinStack()
