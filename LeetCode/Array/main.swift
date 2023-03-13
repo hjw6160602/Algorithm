@@ -2,7 +2,7 @@
 //  main.swift
 //  Array
 //
-//  Created by 江雪 on 2021/2/18.
+//  Created by 贺嘉炜 on 2021/2/18.
 //  Copyright © 2021 saidicaprio. All rights reserved.
 //
 
@@ -17,7 +17,7 @@ class Solution {
     private init() {}
 }
 
-test621leastInterval()
+//test621leastInterval()
 //test41firstMissingPositive()
 //test304NumMatrix()
 //test238productExceptSelf()

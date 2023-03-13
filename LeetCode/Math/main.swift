@@ -16,6 +16,7 @@ class Solution {
     private init() {}
 }
 
+testInt2Roman()
 //testMissingNumber()
 //test0101IsUnique()
 //test118Generate()
@@ -30,7 +31,7 @@ class Solution {
 //test371GetSum()
 //test461HammingDistance()
 //test119GetRow()
-test204CountPrimes()
+//test204CountPrimes()
 //test326IsPowerOfThree()
 //test191HammingWeight()
 //test338CountBits()

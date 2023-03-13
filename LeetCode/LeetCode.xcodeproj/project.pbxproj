@@ -220,6 +220,7 @@
 		CA99152229B48197009DDAF5 /* 990.等式方程的可满足性.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99152129B48197009DDAF5 /* 990.等式方程的可满足性.swift */; };
 		CA99152429B48BAD009DDAF5 /* 547. 省份数量 .swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99152329B48BAD009DDAF5 /* 547. 省份数量 .swift */; };
 		CA99152629B4DE3C009DDAF5 /* 1541. 平衡括号字符串的最少插入次数.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99152529B4DE3C009DDAF5 /* 1541. 平衡括号字符串的最少插入次数.swift */; };
+		CA99152829BF3E18009DDAF5 /* 12. 整数转罗马数字.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99152729BF3E18009DDAF5 /* 12. 整数转罗马数字.swift */; };
 		CAA621D127F756AE0010E814 /* 28.实现strStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA621D027F756AE0010E814 /* 28.实现strStr.swift */; };
 		CAA7FB352810604300A2A3BE /* 169. 多数元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7FB342810604200A2A3BE /* 169. 多数元素.swift */; };
 		CAADBC3C25F3487F0080BFBA /* 1143.最长公共子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAADBC3B25F3487F0080BFBA /* 1143.最长公共子序列.swift */; };
@@ -587,6 +588,7 @@
 		CA99152129B48197009DDAF5 /* 990.等式方程的可满足性.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "990.等式方程的可满足性.swift"; sourceTree = "<group>"; };
 		CA99152329B48BAD009DDAF5 /* 547. 省份数量 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "547. 省份数量 .swift"; sourceTree = "<group>"; };
 		CA99152529B4DE3C009DDAF5 /* 1541. 平衡括号字符串的最少插入次数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1541. 平衡括号字符串的最少插入次数.swift"; sourceTree = "<group>"; };
+		CA99152729BF3E18009DDAF5 /* 12. 整数转罗马数字.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "12. 整数转罗马数字.swift"; sourceTree = "<group>"; };
 		CAA621D027F756AE0010E814 /* 28.实现strStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "28.实现strStr.swift"; sourceTree = "<group>"; };
 		CAA7FB342810604200A2A3BE /* 169. 多数元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "169. 多数元素.swift"; sourceTree = "<group>"; };
 		CAADBC3B25F3487F0080BFBA /* 1143.最长公共子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1143.最长公共子序列.swift"; sourceTree = "<group>"; };
@@ -1058,6 +1060,7 @@
 				80F2C28925DE55E30051398B /* main.swift */,
 				80F2C29B25DE56190051398B /* 01. Two Sum.swift */,
 				80F2C2C425DE56520051398B /* 50. Pow(x, n).swift */,
+				CA99152729BF3E18009DDAF5 /* 12. 整数转罗马数字.swift */,
 				67B8CD1525E62BC90059D7B5 /* 62. 圆圈中最后剩下的数字.swift */,
 				67B1746725F8B6C400F27D40 /* 7. 整数反转.swift */,
 				67EAE6A625F9C1700077FC9D /* 9. 回文数.swift */,
@@ -1721,6 +1724,7 @@
 				80F2C2C525DE56520051398B /* 50. Pow(x, n).swift in Sources */,
 				CAF523F5280723FB00A62886 /* 292. Nim 游戏.swift in Sources */,
 				67E0BDCD286E9D5B0066A653 /* 507. 完美数.swift in Sources */,
+				CA99152829BF3E18009DDAF5 /* 12. 整数转罗马数字.swift in Sources */,
 				CA5C26392871E86F00836003 /* 204. 计数质数.swift in Sources */,
 				80F2C28A25DE55E30051398B /* main.swift in Sources */,
 				CA5C261C286CA82B00836003 /* 1025. 除数博弈.swift in Sources */,
