@@ -223,6 +223,7 @@
 		CA99152829BF3E18009DDAF5 /* 12. 整数转罗马数字.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99152729BF3E18009DDAF5 /* 12. 整数转罗马数字.swift */; };
 		CA99152A29C75384009DDAF5 /* 84. 柱状图中最大的矩形 .swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99152929C75384009DDAF5 /* 84. 柱状图中最大的矩形 .swift */; };
 		CA99152C29C84C70009DDAF5 /* 85. 最大矩形.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99152B29C84C70009DDAF5 /* 85. 最大矩形.swift */; };
+		CA99152E29C8502A009DDAF5 /* 301. 删除无效的括号.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99152D29C8502A009DDAF5 /* 301. 删除无效的括号.swift */; };
 		CAA621D127F756AE0010E814 /* 28.实现strStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA621D027F756AE0010E814 /* 28.实现strStr.swift */; };
 		CAA7FB352810604300A2A3BE /* 169. 多数元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7FB342810604200A2A3BE /* 169. 多数元素.swift */; };
 		CAADBC3C25F3487F0080BFBA /* 1143.最长公共子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAADBC3B25F3487F0080BFBA /* 1143.最长公共子序列.swift */; };
@@ -593,6 +594,7 @@
 		CA99152729BF3E18009DDAF5 /* 12. 整数转罗马数字.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "12. 整数转罗马数字.swift"; sourceTree = "<group>"; };
 		CA99152929C75384009DDAF5 /* 84. 柱状图中最大的矩形 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "84. 柱状图中最大的矩形 .swift"; sourceTree = "<group>"; };
 		CA99152B29C84C70009DDAF5 /* 85. 最大矩形.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "85. 最大矩形.swift"; sourceTree = "<group>"; };
+		CA99152D29C8502A009DDAF5 /* 301. 删除无效的括号.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "301. 删除无效的括号.swift"; sourceTree = "<group>"; };
 		CAA621D027F756AE0010E814 /* 28.实现strStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "28.实现strStr.swift"; sourceTree = "<group>"; };
 		CAA7FB342810604200A2A3BE /* 169. 多数元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "169. 多数元素.swift"; sourceTree = "<group>"; };
 		CAADBC3B25F3487F0080BFBA /* 1143.最长公共子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1143.最长公共子序列.swift"; sourceTree = "<group>"; };
@@ -940,6 +942,7 @@
 				67960E3928AA7F2E0076C741 /* 79. 单词搜索.swift */,
 				67631DD228B71C7700F29636 /* 240. 搜索二维矩阵 II.swift */,
 				67631DD428B8CEEE00F29636 /* 287. 寻找重复数.swift */,
+				CA99152D29C8502A009DDAF5 /* 301. 删除无效的括号.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -1620,6 +1623,7 @@
 				67960E3A28AA7F2E0076C741 /* 79. 单词搜索.swift in Sources */,
 				67631DD528B8CEEE00F29636 /* 287. 寻找重复数.swift in Sources */,
 				67E0BDE52872CD670066A653 /* 278. 第一个错误的版本.swift in Sources */,
+				CA99152E29C8502A009DDAF5 /* 301. 删除无效的括号.swift in Sources */,
 				CA224316288EEC8C00332C01 /* 34. 在排序数组中查找元素的第一个和最后一个位置.swift in Sources */,
 				67E39423288979AE00B4F252 /* 200. 岛屿数量.swift in Sources */,
 				67B98BAE28901D6A00B56E2D /* 78. 子集.swift in Sources */,

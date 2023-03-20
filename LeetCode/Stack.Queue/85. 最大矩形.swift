@@ -30,7 +30,7 @@ extension Solution {
                 }
             }
             //调用最大矩阵面积的解法，更新函数
-            res = max(res, largestArea(heights));
+            res = max(res, largestRectangleArea(heights));
         }
         return res
     }
