@@ -8,6 +8,14 @@
 class Solution {
     func equationsPossible(_ equations: [String]) -> Bool {
 
+
+    }
+}
+
+class UF {
+    var parent = [Int]()
+    init {
+        
     }
 }
 // @lc code=end

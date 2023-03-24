@@ -28,7 +28,7 @@ class Solution {
                 while rm < r {
                     let tmp =  rm + (r - rm) >> 1 
                     if nums[tmp] != target {
-                        r = tmp + 1
+                        r = tmp - 1
                     } else {
                         rm = tmp
                     }

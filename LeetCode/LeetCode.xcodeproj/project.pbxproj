@@ -65,7 +65,6 @@
 		67B98BAE28901D6A00B56E2D /* 78. 子集.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B98BAD28901D6A00B56E2D /* 78. 子集.swift */; };
 		67BAB8A425CD4B0B00F2F273 /* 654.最大二叉树.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BAB8A325CD4B0B00F2F273 /* 654.最大二叉树.swift */; };
 		67BC54E325F61FAC006F2471 /* 21. 合并两个有序链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC54E225F61FAC006F2471 /* 21. 合并两个有序链表.swift */; };
-		67BDD5812885876F00884306 /* 19. 删除链表的倒数第 N 个结点.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BDD5802885876F00884306 /* 19. 删除链表的倒数第 N 个结点.swift */; };
 		67BDD58928869F1400884306 /* 912.排序数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BDD58828869F1400884306 /* 912.排序数组.swift */; };
 		67BDD58A2886AFF700884306 /* 215. 数组中的第K个最大元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BDD5862886949F00884306 /* 215. 数组中的第K个最大元素.swift */; };
 		67BF3E90287837FD0033A69C /* 33. 搜索旋转排序数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF3E8F287837FD0033A69C /* 33. 搜索旋转排序数组.swift */; };
@@ -201,6 +200,7 @@
 		CA5C263328709F3B00836003 /* 326. 3 的幂 .swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C263228709F3B00836003 /* 326. 3 的幂 .swift */; };
 		CA5C26372871E4AE00836003 /* 191. 位1的个数.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C26362871E4AE00836003 /* 191. 位1的个数.swift */; };
 		CA5C26392871E86F00836003 /* 204. 计数质数.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C26382871E86F00836003 /* 204. 计数质数.swift */; };
+		CA75DD2029CC3250001DCEED /* 19. 删除链表的倒数第 N 个结点.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75DD1F29CC3250001DCEED /* 19. 删除链表的倒数第 N 个结点.swift */; };
 		CA8439BA29921B8E00C24AC2 /* 76.最小覆盖子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439B929921B8E00C24AC2 /* 76.最小覆盖子串.swift */; };
 		CA8439BC299379FD00C24AC2 /* 304. 二维区域和检索 - 矩阵不可变.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439BB299379FD00C24AC2 /* 304. 二维区域和检索 - 矩阵不可变.swift */; };
 		CA8439BE299CC62F00C24AC2 /* 659.分割数组为连续子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8439BD299CC62F00C24AC2 /* 659.分割数组为连续子序列.swift */; };
@@ -430,7 +430,6 @@
 		67B98BAD28901D6A00B56E2D /* 78. 子集.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "78. 子集.swift"; sourceTree = "<group>"; };
 		67BAB8A325CD4B0B00F2F273 /* 654.最大二叉树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "654.最大二叉树.swift"; sourceTree = "<group>"; };
 		67BC54E225F61FAC006F2471 /* 21. 合并两个有序链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21. 合并两个有序链表.swift"; sourceTree = "<group>"; };
-		67BDD5802885876F00884306 /* 19. 删除链表的倒数第 N 个结点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "19. 删除链表的倒数第 N 个结点.swift"; sourceTree = "<group>"; };
 		67BDD5862886949F00884306 /* 215. 数组中的第K个最大元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "215. 数组中的第K个最大元素.swift"; sourceTree = "<group>"; };
 		67BDD58828869F1400884306 /* 912.排序数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "912.排序数组.swift"; sourceTree = "<group>"; };
 		67BF3E8F287837FD0033A69C /* 33. 搜索旋转排序数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "33. 搜索旋转排序数组.swift"; sourceTree = "<group>"; };
@@ -571,6 +570,7 @@
 		CA5C263228709F3B00836003 /* 326. 3 的幂 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "326. 3 的幂 .swift"; sourceTree = "<group>"; };
 		CA5C26362871E4AE00836003 /* 191. 位1的个数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "191. 位1的个数.swift"; sourceTree = "<group>"; };
 		CA5C26382871E86F00836003 /* 204. 计数质数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "204. 计数质数.swift"; sourceTree = "<group>"; };
+		CA75DD1F29CC3250001DCEED /* 19. 删除链表的倒数第 N 个结点.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "19. 删除链表的倒数第 N 个结点.swift"; sourceTree = "<group>"; };
 		CA8439B929921B8E00C24AC2 /* 76.最小覆盖子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "76.最小覆盖子串.swift"; sourceTree = "<group>"; };
 		CA8439BB299379FD00C24AC2 /* 304. 二维区域和检索 - 矩阵不可变.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "304. 二维区域和检索 - 矩阵不可变.swift"; sourceTree = "<group>"; };
 		CA8439BD299CC62F00C24AC2 /* 659.分割数组为连续子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "659.分割数组为连续子序列.swift"; sourceTree = "<group>"; };
@@ -736,7 +736,7 @@
 				676E87D625C98EF900E52125 /* main.swift */,
 				676E880525C98F2200E52125 /* ListNode.swift */,
 				676E881C25C9938600E52125 /* 02. 两数相加.swift */,
-				67BDD5802885876F00884306 /* 19. 删除链表的倒数第 N 个结点.swift */,
+				CA75DD1F29CC3250001DCEED /* 19. 删除链表的倒数第 N 个结点.swift */,
 				67BC54E225F61FAC006F2471 /* 21. 合并两个有序链表.swift */,
 				67BF3E91287C3FCD0033A69C /* 23. 合并K个升序链表.swift */,
 				67E3EFB2293DFB9A005682C8 /* 25. K 个一组翻转链表.swift */,
@@ -1461,7 +1461,6 @@
 				67B8CD2025E6351B0059D7B5 /* 16.25 LRUCache.swift in Sources */,
 				67E3EFB3293DFB9A005682C8 /* 25. K 个一组翻转链表.swift in Sources */,
 				67ACEB4C25CADA5C009C53EE /* 234.回文链表.swift in Sources */,
-				67BDD5812885876F00884306 /* 19. 删除链表的倒数第 N 个结点.swift in Sources */,
 				67631DCD28B3B88000F29636 /* 148. 排序链表.swift in Sources */,
 				CA224312288C43D000332C01 /* 剑指 Offer 24. 反转链表.swift in Sources */,
 				67ACEB0725CAD8B3009C53EE /* 86. 分隔链表.swift in Sources */,
@@ -1475,6 +1474,7 @@
 				67B57C4625CB9CFF00814C1A /* 141.环形链表.swift in Sources */,
 				CA99150E29B1FB7C009DDAF5 /* 面试题 02.05. 链表求和 .swift in Sources */,
 				CA22432228941A2A00332C01 /* 剑指 Offer 22. 链表中倒数第k个节点.swift in Sources */,
+				CA75DD2029CC3250001DCEED /* 19. 删除链表的倒数第 N 个结点.swift in Sources */,
 				67ACEB1E25CAD8D0009C53EE /* 160.交叉链表.swift in Sources */,
 				67631DCB28B3758800F29636 /* 142.环形链表II.swift in Sources */,
 				67BF3E92287C3FCD0033A69C /* 23. 合并K个升序链表.swift in Sources */,

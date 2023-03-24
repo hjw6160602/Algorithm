@@ -9,19 +9,26 @@
 class MyStack {
     ///
     var queue = [Int]()
+    var topElm = 0
 
     init() { }
     
     func push(_ x: Int) {
         queue.append(x)
+        topElm = x
     }
     
     func pop() -> Int {
-        return queue.removeLast()
+        var size = queue.count
+        while size > 1 {
+            queue.append(queue.removeFirst())
+            size -= 1
+        }
+        return queue.removeFirst()
     }
     
     func top() -> Int {
-        return queue.last ?? 0
+        return topElm
     }
     
     func empty() -> Bool {

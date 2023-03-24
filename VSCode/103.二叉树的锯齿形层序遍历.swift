@@ -23,17 +23,18 @@
 class Solution {
     func zigzagLevelOrder(_ root: TreeNode?) -> [[Int]] {
         var res = [[Int]]()
-        guard var node = root else {
+        guard let node = root else {
             return res
         }
 
-        var isLeftDirection = true
+        var isLeft2Right = true
         var queue: [TreeNode] = [node]
+        res.append([node.val])
         while !queue.isEmpty {
             // 每一层进来后都调转方向
-            isLeftDirection = !isLeftDirection
+            isLeft2Right = !isLeft2Right
             var path = [TreeNode]()
-            for i in 0..<queue.count {
+            for _ in 0..<queue.count {
                 let head = queue.removeFirst()
                 if let left = head.left {
                     path.append(left)
@@ -42,9 +43,13 @@ class Solution {
                     path.append(right)
                 }
             }
-
-
-            res.append(path)
+            if path.count > 0 {
+                queue.append(contentsOf: path)
+                if !isLeft2Right {
+                    path = path.reversed()
+                }
+                res.append(path.map{$0.val})
+            }
         }
         return res
     }

@@ -23,7 +23,7 @@
 class Solution {
     func isBalanced(_ root: TreeNode?) -> Bool {
         var isBalance = true
-        return deverse(root, &isBalance)
+        return deverse(root, &isBalance).1
     }
 
     private func deverse(_ node: TreeNode?, isBalance: inout Bool) -> (Int, Bool) {
@@ -33,7 +33,6 @@ class Solution {
         guard node != nil else {
             return (0, true)
         }
-        guard node
 
         let (leftH, isBalanced) = deverse(node.left)
         let (rightH, isBalanced) = deverse(node.right)

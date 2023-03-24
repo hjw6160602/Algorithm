@@ -10,31 +10,30 @@ class Solution {
 // 14.4 MB 32%
     func longestValidParentheses(_ s: String) -> Int {
         var s = Array(s), stack = [Int]()
-
         // dp[i] 的定义：记录以 s[i-1] 结尾的最长合法括号子串长度
-        var dp = Array(repeating:0,count: s.count+1)
+        var dp = Array(repeating:0, count: s.count+1)
         for i in 0..<s.count {
             if s[i] == "(" {
                 // 遇到左括号,记录索引,入栈
                 stack.append(i)
-                // 左括号不可能是合法括号子串的结尾
-                dp[i+1] = 0
+                // 左括号不可能是合法括号子串的结尾,则以s[i]结尾的最长合法子串长度是0
                 continue
             }
             // 来到这了证明是 ")"
             if stack.count == 0 {
-                dp[i+1] = 0
+                // 没有配对的左括号,则以s[i]结尾的最长合法子串长度是0
                 continue
             }
             // 来到这里证明栈里面有 元素
-
             // 配对的左括号对应索引
             let leftIndex = stack.removeLast()
-            // 以这个右括号结尾的最长子串长度
+            // 以这个')'结尾的最长子串长度
+            // = 以这个')'结尾的最短合法子串长度
+            //   + 之前相邻的s[leftIndex-1]结尾的最长合法子串长度
             let len = 1 + i - leftIndex + dp[leftIndex]
             dp[i+1] = len
         }
-        return dp.max()
+        return dp.max()!
     }
 
     // "()(()" 解答错误
