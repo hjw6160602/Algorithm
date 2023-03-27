@@ -22,7 +22,7 @@ extension Solution {
         var node: ListNode? = dummy, prevNthNode = dummy
         var cur = 0
         while node != nil {
-            if cur > n {
+            if cur > n {	
                 prevNthNode = prevNthNode.next!
             }
             node = node!.next
