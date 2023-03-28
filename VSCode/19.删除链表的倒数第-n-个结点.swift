@@ -17,7 +17,21 @@
  */
 class Solution {
     func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? {
+        let dummy = ListNode()
+        dummy.next = head
 
+        var k: Int = 1
+        var prevKthNode = dummy, node:ListNode? = head
+        while node != nil {
+            if  k > n {
+                prevKthNode = prevKthNode.next! 
+            }
+            node = node!.next
+            k += 1
+        }
+
+        prevKthNode.next = prevKthNode.next?.next
+        return dummy.next
     }
 }
 // @lc code=end
