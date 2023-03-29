@@ -6,6 +6,40 @@
 
 // @lc code=start
 class Solution {
+
+    func threeSum(_ nums:[Int]) -> [[Int]] {
+        guard nums.count > 2 else { return [] }
+        let nums = nums.sorted()
+        var res = [[Int]](), last = Int.max
+        for a in 0..<nums.count-2 {
+            var b = a + 1, c = nums.count - 1
+            if nums[a] == last {
+                continue
+            }
+            while b < c {
+                if nums[a] + nums[b] + nums[c] == 0 {
+                    res.append([nums[a], nums[b], nums[c]])
+                    b += 1
+                    c -= 1
+                    while b < c && nums[b] == nums[b-1] {
+                        b += 1
+                    }
+                    while b < c && nums[c] == nums[c+1] {
+                        c -= 1
+                    }
+                } else if nums[a] + nums[b] + nums[c] < 0 {
+                    b += 1
+                } else {
+                    c -= 1
+                }
+            }
+            last = nums[a]
+        }
+        return res
+    }
+
+
+
     func threeSum(_ nums:[Int]) -> [[Int]] {
         guard nums.count > 2 else { return [] }
         var res = [[Int]]()
