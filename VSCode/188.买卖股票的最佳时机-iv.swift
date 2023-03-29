@@ -6,8 +6,8 @@
 
 // @lc code=start
 class Solution {
-    func maxProfit(_ k: Int, _ prices: [Int]) -> Int {
-        let n = prices.count, maxK = k
+    func maxProfit(_ maxK: Int, _ prices: [Int]) -> Int {
+        let n = prices.count
         guard n > 0 else { return 0 }
         if maxK > n / 2 {
             return maxProfitInf2(prices)
@@ -27,7 +27,7 @@ class Solution {
                     continue
                 }
                 dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1] + prices[i])
-                dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][1] - prices[i])
+                dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0] - prices[i])
             }
         }
         return dp[n-1][maxK][0]
