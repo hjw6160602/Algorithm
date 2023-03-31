@@ -179,6 +179,7 @@
 		CA23E6F625FDE1400048115F /* 88.合并两个有序数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA23E6F525FDE1400048115F /* 88.合并两个有序数组.swift */; };
 		CA23E70125FE48700048115F /* 75.颜色分类.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA23E70025FE48700048115F /* 75.颜色分类.swift */; };
 		CA2551B62816E36500E48048 /* 686.重复叠加字符串匹配.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2551B52816E36500E48048 /* 686.重复叠加字符串匹配.swift */; };
+		CA2E1C6D29D56F8B00ACD616 /* 面试题OD.三等分子数组和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2E1C6C29D56F8B00ACD616 /* 面试题OD.三等分子数组和.swift */; };
 		CA45D7A92896DADF00436EFB /* 237. 删除链表中的节点.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA45D7A82896DADF00436EFB /* 237. 删除链表中的节点.swift */; };
 		CA45D7AB2898254100436EFB /* 48. 旋转图像.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA45D7AA2898254100436EFB /* 48. 旋转图像.swift */; };
 		CA487B4B28961EAB004EF75D /* 412. Fizz Buzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA487B4A28961EAB004EF75D /* 412. Fizz Buzz.swift */; };
@@ -549,6 +550,7 @@
 		CA23E6F525FDE1400048115F /* 88.合并两个有序数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "88.合并两个有序数组.swift"; sourceTree = "<group>"; };
 		CA23E70025FE48700048115F /* 75.颜色分类.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "75.颜色分类.swift"; sourceTree = "<group>"; };
 		CA2551B52816E36500E48048 /* 686.重复叠加字符串匹配.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "686.重复叠加字符串匹配.swift"; sourceTree = "<group>"; };
+		CA2E1C6C29D56F8B00ACD616 /* 面试题OD.三等分子数组和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题OD.三等分子数组和.swift"; sourceTree = "<group>"; };
 		CA45D7A82896DADF00436EFB /* 237. 删除链表中的节点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "237. 删除链表中的节点.swift"; sourceTree = "<group>"; };
 		CA45D7AA2898254100436EFB /* 48. 旋转图像.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "48. 旋转图像.swift"; sourceTree = "<group>"; };
 		CA487B4A28961EAB004EF75D /* 412. Fizz Buzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "412. Fizz Buzz.swift"; sourceTree = "<group>"; };
@@ -974,6 +976,7 @@
 			isa = PBXGroup;
 			children = (
 				80F2C03D25DE46400051398B /* main.swift */,
+				CA2E1C6C29D56F8B00ACD616 /* 面试题OD.三等分子数组和.swift */,
 				CA22430A288C373D00332C01 /* Set */,
 				CA2243012886FDFC00332C01 /* 贪心 */,
 				80F2C3CA25DF8D640051398B /* 01. 两数之和.swift */,
@@ -1671,6 +1674,7 @@
 				CAF523E12805508900A62886 /* 448.找到数组中消失的数字.swift in Sources */,
 				CAA7FB352810604300A2A3BE /* 169. 多数元素.swift in Sources */,
 				CA08BB6B286A05F6005FD7A2 /* 1010. 总持续时间可被 60 整除的歌曲.swift in Sources */,
+				CA2E1C6D29D56F8B00ACD616 /* 面试题OD.三等分子数组和.swift in Sources */,
 				67E39427288A48F100B4F252 /* 560. 和为 K 的子数组.swift in Sources */,
 				CA224314288D15CD00332C01 /* 163. 缺失的区间.swift in Sources */,
 				CA224310288C3D1600332C01 /* 剑指 Offer 03. 数组中重复的数字.swift in Sources */,
