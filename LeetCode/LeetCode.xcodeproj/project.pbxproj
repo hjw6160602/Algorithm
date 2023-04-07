@@ -180,6 +180,7 @@
 		CA23E70125FE48700048115F /* 75.颜色分类.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA23E70025FE48700048115F /* 75.颜色分类.swift */; };
 		CA2551B62816E36500E48048 /* 686.重复叠加字符串匹配.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2551B52816E36500E48048 /* 686.重复叠加字符串匹配.swift */; };
 		CA2E1C6D29D56F8B00ACD616 /* 面试题OD.三等分子数组和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2E1C6C29D56F8B00ACD616 /* 面试题OD.三等分子数组和.swift */; };
+		CA2E1C6F29D9DC6200ACD616 /* 140.单词拆分II.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2E1C6E29D9DC6200ACD616 /* 140.单词拆分II.swift */; };
 		CA45D7A92896DADF00436EFB /* 237. 删除链表中的节点.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA45D7A82896DADF00436EFB /* 237. 删除链表中的节点.swift */; };
 		CA45D7AB2898254100436EFB /* 48. 旋转图像.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA45D7AA2898254100436EFB /* 48. 旋转图像.swift */; };
 		CA487B4B28961EAB004EF75D /* 412. Fizz Buzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA487B4A28961EAB004EF75D /* 412. Fizz Buzz.swift */; };
@@ -551,6 +552,7 @@
 		CA23E70025FE48700048115F /* 75.颜色分类.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "75.颜色分类.swift"; sourceTree = "<group>"; };
 		CA2551B52816E36500E48048 /* 686.重复叠加字符串匹配.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "686.重复叠加字符串匹配.swift"; sourceTree = "<group>"; };
 		CA2E1C6C29D56F8B00ACD616 /* 面试题OD.三等分子数组和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题OD.三等分子数组和.swift"; sourceTree = "<group>"; };
+		CA2E1C6E29D9DC6200ACD616 /* 140.单词拆分II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "140.单词拆分II.swift"; sourceTree = "<group>"; };
 		CA45D7A82896DADF00436EFB /* 237. 删除链表中的节点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "237. 删除链表中的节点.swift"; sourceTree = "<group>"; };
 		CA45D7AA2898254100436EFB /* 48. 旋转图像.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "48. 旋转图像.swift"; sourceTree = "<group>"; };
 		CA487B4A28961EAB004EF75D /* 412. Fizz Buzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "412. Fizz Buzz.swift"; sourceTree = "<group>"; };
@@ -1049,6 +1051,7 @@
 				CA22432528957D8900332C01 /* 125. 验证回文串.swift */,
 				CA487B4A28961EAB004EF75D /* 412. Fizz Buzz.swift */,
 				676FBC4D289AB28B005882F5 /* 139. 单词拆分.swift */,
+				CA2E1C6E29D9DC6200ACD616 /* 140.单词拆分II.swift */,
 				CA1B8E64289D5F5500C2D6E5 /* 340. 至多包含 K 个不同字符的最长子串.swift */,
 				CA8439B929921B8E00C24AC2 /* 76.最小覆盖子串.swift */,
 			);
@@ -1700,6 +1703,7 @@
 			files = (
 				80F2C12C25DE4D330051398B /* 344.Reverse String.swift in Sources */,
 				CA22432628957D8900332C01 /* 125. 验证回文串.swift in Sources */,
+				CA2E1C6F29D9DC6200ACD616 /* 140.单词拆分II.swift in Sources */,
 				CA5C262F28704CB800836003 /* 709. 转换成小写字母.swift in Sources */,
 				67E0BDE72872D6870066A653 /* 387.字符串中的第一个唯一字符.swift in Sources */,
 				67C8F53526005F79009CEB1C /* 419.字符串相加.swift in Sources */,

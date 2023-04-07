@@ -31,7 +31,7 @@ class Solution {
 //testIsAnagram()
 //test03LengthOfLongestSubstring()
 //testMinDistance()
-test05LongestPalindrome()
+//test05LongestPalindrome()
 //testIndexOf()
 //testRomanToInt()
 //testIsSubsequence()
@@ -43,6 +43,7 @@ test05LongestPalindrome()
 //test125IsPalindrome()
 //test412FizzBuzz()
 //test139WordBreak()
+test140WordBreak()
 
 extension String {
     

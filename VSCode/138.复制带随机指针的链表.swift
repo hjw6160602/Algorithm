@@ -20,8 +20,10 @@
  */
 
 class Solution {
-
     func copyRandomList(_ head: Node?) -> Node? {
+        guard let node = head else {
+            return nil
+        }
         var originToClone = [Node: Node]()
         // 首先遍历，克隆所有节点
         var p = head
@@ -46,13 +48,12 @@ class Solution {
             // 将原链表中的节点往下走
             p = p!.next
         }
+        return originToClone[head!]
     }
+}
 
-// Return the cloned head node
-return originToClone[head]
-    }
+class Solution2 {
     var visited = [Node: Node]()
-
     // 递归拷贝链表 DFS
     func copyRandomList(_ head: Node?) -> Node? {
         guard let node = head else {

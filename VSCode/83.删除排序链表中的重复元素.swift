@@ -17,6 +17,26 @@
  */
 class Solution {
 
+    // 20 ms 79.20%
+    // 13.8 MB 52%
+    func deleteDuplicates(_ head: ListNode?) -> ListNode? {
+        var dummy = ListNode(head)
+
+        var slow = head, fast = head
+        while fast != nil {
+            while fast?.val == slow?.val {
+                fast = fast?.next
+            }
+            slow?.next = fast
+            slow = fast
+        }
+        slow?.next = nil
+
+        return dummy.next
+    }
+
+    // 16 ms 96%
+    // 13.9 MB 24.80%
     func deleteDuplicates(_ head: ListNode?) -> ListNode? {
         var dummy = ListNode()
         dummy.next = head
@@ -26,7 +46,7 @@ class Solution {
         while fast != nil {
             if slow!.val != fast!.val {
                 slow!.next = fast
-                slow = slow!.next
+                slow = fast
             }
             fast = fast!.next
         }
