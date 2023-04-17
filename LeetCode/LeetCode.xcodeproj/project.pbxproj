@@ -188,6 +188,7 @@
 		CA4F6F9528806EB000B4759E /* 617. 合并二叉树.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F6F9428806EB000B4759E /* 617. 合并二叉树.swift */; };
 		CA4F6F972880715300B4759E /* 538. 把二叉搜索树转换为累加树.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F6F962880715300B4759E /* 538. 把二叉搜索树转换为累加树.swift */; };
 		CA55A6882860C51700154A15 /* 1030.距离顺序排列矩阵单元格.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55A6872860C51700154A15 /* 1030.距离顺序排列矩阵单元格.swift */; };
+		CA5ADE9F29ED9E5D005A5EA3 /* 315. 计算右侧小于当前元素的个数.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5ADE9E29ED9E5D005A5EA3 /* 315. 计算右侧小于当前元素的个数.swift */; };
 		CA5C261C286CA82B00836003 /* 1025. 除数博弈.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C261B286CA82B00836003 /* 1025. 除数博弈.swift */; };
 		CA5C261F286CAC4C00836003 /* 922. 按奇偶排序数组 II.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C261D286CAC4600836003 /* 922. 按奇偶排序数组 II.swift */; };
 		CA5C2621286DE60C00836003 /* 409. 最长回文串.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C2620286DE60C00836003 /* 409. 最长回文串.swift */; };
@@ -560,6 +561,7 @@
 		CA4F6F9428806EB000B4759E /* 617. 合并二叉树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "617. 合并二叉树.swift"; sourceTree = "<group>"; };
 		CA4F6F962880715300B4759E /* 538. 把二叉搜索树转换为累加树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "538. 把二叉搜索树转换为累加树.swift"; sourceTree = "<group>"; };
 		CA55A6872860C51700154A15 /* 1030.距离顺序排列矩阵单元格.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1030.距离顺序排列矩阵单元格.swift"; sourceTree = "<group>"; };
+		CA5ADE9E29ED9E5D005A5EA3 /* 315. 计算右侧小于当前元素的个数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "315. 计算右侧小于当前元素的个数.swift"; sourceTree = "<group>"; };
 		CA5C261B286CA82B00836003 /* 1025. 除数博弈.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1025. 除数博弈.swift"; sourceTree = "<group>"; };
 		CA5C261D286CAC4600836003 /* 922. 按奇偶排序数组 II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "922. 按奇偶排序数组 II.swift"; sourceTree = "<group>"; };
 		CA5C2620286DE60C00836003 /* 409. 最长回文串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "409. 最长回文串.swift"; sourceTree = "<group>"; };
@@ -864,6 +866,7 @@
 				676FBC51289CFBF6005882F5 /* 210.课程表II.swift */,
 				67D7C15C28A14A850064F4DF /* 49. 字母异位词分组.swift */,
 				67EB31FC28AD20F800529B6D /* 581. 最短无序连续子数组.swift */,
+				CA5ADE9E29ED9E5D005A5EA3 /* 315. 计算右侧小于当前元素的个数.swift */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -1602,6 +1605,7 @@
 				CA5C261F286CAC4C00836003 /* 922. 按奇偶排序数组 II.swift in Sources */,
 				CA08BB692869FAD4005FD7A2 /* 628. 三个数的最大乘积.swift in Sources */,
 				CA2243242894243D00332C01 /* 253. 会议室 II.swift in Sources */,
+				CA5ADE9F29ED9E5D005A5EA3 /* 315. 计算右侧小于当前元素的个数.swift in Sources */,
 				67EB31FD28AD20F800529B6D /* 581. 最短无序连续子数组.swift in Sources */,
 				676FBC50289CED62005882F5 /* 207.课程表.swift in Sources */,
 				67CA007728980F7100D6907B /* 406. 根据身高重建队列.swift in Sources */,
