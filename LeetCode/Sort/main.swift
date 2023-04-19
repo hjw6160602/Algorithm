@@ -16,7 +16,8 @@ class Solution {
     private init() {}
 }
 
-test315CountSmaller()
+test327CountRangeSum()
+//test315CountSmaller()
 //testMaximumProduct()
 //test922SortArrayByParityII()
 //testAllCellsDistOrder()

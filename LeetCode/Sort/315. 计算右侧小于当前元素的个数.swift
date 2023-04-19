@@ -72,6 +72,7 @@ class CountSmaller {
                 // 右半边数组已全部被合并
                 arr[p] = temp[i]
                 i += 1
+                // 更新 count 数组
                 count[arr[p].id] += j - mid - 1
             } else if temp[i].val > temp[j].val {
                 arr[p] = temp[j]
@@ -79,6 +80,7 @@ class CountSmaller {
             } else {
                 arr[p] = temp[i]
                 i += 1
+                // 更新 count 数组
                 count[arr[p].id] += j - mid - 1
             }
         }

@@ -239,6 +239,7 @@
 		CAC4ADA42812FEA400F0FF9B /* 492. 构造矩形.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4ADA32812FEA400F0FF9B /* 492. 构造矩形.swift */; };
 		CAC4ADA62815A94400F0FF9B /* 867. 转置矩阵.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4ADA52815A94400F0FF9B /* 867. 转置矩阵.swift */; };
 		CAE8C4E42875E3B8007B51D7 /* 107. 二叉树的层序遍历 II.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE8C4E32875E3B8007B51D7 /* 107. 二叉树的层序遍历 II.swift */; };
+		CAEB68C129F03FEC00E98F9C /* 327. 区间和的个数.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEB68C029F03FEC00E98F9C /* 327. 区间和的个数.swift */; };
 		CAF523D527F8553100A62886 /* 35.搜索插入的位置.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF523D427F8553100A62886 /* 35.搜索插入的位置.swift */; };
 		CAF523D727F9F39400A62886 /* 13.罗马数字转整数.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF523D627F9F39400A62886 /* 13.罗马数字转整数.swift */; };
 		CAF523DA27FDF47800A62886 /* 136.只出现一次的数字.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF523D827FDF3AF00A62886 /* 136.只出现一次的数字.swift */; };
@@ -613,6 +614,7 @@
 		CAC4ADA32812FEA400F0FF9B /* 492. 构造矩形.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "492. 构造矩形.swift"; sourceTree = "<group>"; };
 		CAC4ADA52815A94400F0FF9B /* 867. 转置矩阵.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "867. 转置矩阵.swift"; sourceTree = "<group>"; };
 		CAE8C4E32875E3B8007B51D7 /* 107. 二叉树的层序遍历 II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "107. 二叉树的层序遍历 II.swift"; sourceTree = "<group>"; };
+		CAEB68C029F03FEC00E98F9C /* 327. 区间和的个数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "327. 区间和的个数.swift"; sourceTree = "<group>"; };
 		CAF523D427F8553100A62886 /* 35.搜索插入的位置.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "35.搜索插入的位置.swift"; sourceTree = "<group>"; };
 		CAF523D627F9F39400A62886 /* 13.罗马数字转整数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "13.罗马数字转整数.swift"; sourceTree = "<group>"; };
 		CAF523D827FDF3AF00A62886 /* 136.只出现一次的数字.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "136.只出现一次的数字.swift"; sourceTree = "<group>"; };
@@ -858,7 +860,6 @@
 				CA08BB682869FAD4005FD7A2 /* 628. 三个数的最大乘积.swift */,
 				CA5C261D286CAC4600836003 /* 922. 按奇偶排序数组 II.swift */,
 				CA5C262C287031B100836003 /* 561. 数组拆分 I.swift */,
-				67BDD58828869F1400884306 /* 912.排序数组.swift */,
 				67E393BE2887ADB900B4F252 /* 56. 合并区间.swift */,
 				CA2243232894243D00332C01 /* 253. 会议室 II.swift */,
 				67CA007628980F7100D6907B /* 406. 根据身高重建队列.swift */,
@@ -867,6 +868,8 @@
 				67D7C15C28A14A850064F4DF /* 49. 字母异位词分组.swift */,
 				67EB31FC28AD20F800529B6D /* 581. 最短无序连续子数组.swift */,
 				CA5ADE9E29ED9E5D005A5EA3 /* 315. 计算右侧小于当前元素的个数.swift */,
+				67BDD58828869F1400884306 /* 912.排序数组.swift */,
+				CAEB68C029F03FEC00E98F9C /* 327. 区间和的个数.swift */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -1601,6 +1604,7 @@
 			files = (
 				67E393BF2887ADB900B4F252 /* 56. 合并区间.swift in Sources */,
 				CA55A6882860C51700154A15 /* 1030.距离顺序排列矩阵单元格.swift in Sources */,
+				CAEB68C129F03FEC00E98F9C /* 327. 区间和的个数.swift in Sources */,
 				67D7C15D28A14A850064F4DF /* 49. 字母异位词分组.swift in Sources */,
 				CA5C261F286CAC4C00836003 /* 922. 按奇偶排序数组 II.swift in Sources */,
 				CA08BB692869FAD4005FD7A2 /* 628. 三个数的最大乘积.swift in Sources */,
