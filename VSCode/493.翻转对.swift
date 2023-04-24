@@ -5,26 +5,27 @@
  */
 
 // @lc code=start
-class Solution {
-    var lower = 0
-    var upper = 0
-    var count = 0
-    var temp: [Int64] = []
 
-    func countRangeSum(_ nums: [Int], _ lower: Int, _ upper: Int) -> Int {
-        self.lower = lower
-        self.upper = upper
-        let n = nums.count
-        var preSum: [Int64] = Array(repeating: 0, count: n + 1)
-        // 构建前缀和数组，注意 int 可能溢出，用 Int64 存储
-        for i in 0..<n {
-            preSum[i+1] = Int64(nums[i]) + preSum[i]
-        }
-        sort(&preSum, 0, n)
+// 884 ms
+// 15.8 MB 50%
+class Solution {
+    // 记录「翻转对」的个数
+    var count = 0
+    var temp: [Int] = []
+
+    func reversePairs(_ nums: [Int]) -> Int {
+        var nums = nums
+        sort(&nums)
         return count
     }
-    // 标准排序算法
-    func sort(_ nums: inout [Int64], _ lo: Int, _ hi: Int) {
+    
+    func sort(_ nums: inout [Int]) {
+        temp = Array(repeating: 0, count: nums.count)
+        sort(&nums, 0, nums.count - 1)
+    }
+    
+    // 归并排序
+    func sort(_ nums: inout [Int], _ lo: Int, _ hi: Int) {
         if lo == hi {
             return
         }
@@ -41,6 +42,19 @@ class Solution {
         for i in lo...hi {
             temp[i] = nums[i]
         }
+
+        // 进行效率优化，维护左闭右开区间 [mid+1, end) 中的元素乘 2 小于 nums[i]
+        // 为什么 end 是开区间？因为这样的话可以保证初始区间 [mid+1, mid+1) 是一个空区间
+        var end = mid + 1
+
+        for i in lo...mid {
+            // nums 中的元素可能较大，乘 2 可能溢出，所以转化成 Int64
+            while end <= hi && nums[i] > nums[end] * 2 {
+                end += 1
+            }
+            count += end - (mid + 1)
+        }
+
         // 数组双指针技巧，合并两个有序数组
         var i = lo, j = mid + 1
         for p in lo...hi {

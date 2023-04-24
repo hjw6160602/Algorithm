@@ -91,3 +91,47 @@ struct CityWeatherView: View {
 ``` 
 
 Note: Replace `YOUR_API_KEY` in the `fetchWeatherInfo()` function with your own AMap API key.
+
+
+
+// Set up a semaphore with a count of 0
+let semaphore = DispatchSemaphore(value: 0)
+
+// Perform the pasteboard read on a background queue
+DispatchQueue.global(qos: .background).async {
+    // Wait for up to 3 seconds for the pasteboard string
+    let result = UIPasteboard.general.string
+    if result != nil {
+        // If the string is not nil, print it
+        print(result!)
+    } else {
+        // If the string is nil, print an error message
+        print("Pasteboard read timed out")
+    }
+    // Signal the semaphore to indicate that the task is complete
+    semaphore.signal()
+}
+
+// Wait for the semaphore to be signaled, or for 3 seconds to elapse
+let timeout = DispatchTime.now() + .seconds(3)
+if semaphore.wait(timeout: timeout) == .timedOut {
+    // If the semaphore wait timed out, print an error message
+    print("Pasteboard read timed out")
+}
+
+
+let semaphore = DispatchSemaphore(value: 0)
+DispatchQueue.global(qos: .background).async {
+    let result = UIPasteboard.general.string
+    if result != nil {
+        print(result!)
+    } else {
+        print("粘贴板读取失败！")
+    }
+    semaphore.signal()
+}
+
+let timeout = DispatchTime.now() + .seconds(3)
+if semaphore.wait(timeout: timeout) == .timeout {
+    print("粘贴板读取超时！")
+}
