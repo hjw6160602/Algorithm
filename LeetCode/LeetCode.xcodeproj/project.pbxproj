@@ -251,6 +251,7 @@
 		CAF5242E2808681500A62886 /* 392.判断子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5242D2808681500A62886 /* 392.判断子序列.swift */; };
 		CAF524302809D1F200A62886 /* 67.二进制求和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5242F2809D1F200A62886 /* 67.二进制求和.swift */; };
 		CAF5244C280B1FEE00A62886 /* 349. 两个数组的交集.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5244B280B1FEE00A62886 /* 349. 两个数组的交集.swift */; };
+		CAFE271429F82B260009D015 /* 37. 解数独.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE271329F82B260009D015 /* 37. 解数独.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -628,6 +629,7 @@
 		CAF5242D2808681500A62886 /* 392.判断子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "392.判断子序列.swift"; sourceTree = "<group>"; };
 		CAF5242F2809D1F200A62886 /* 67.二进制求和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "67.二进制求和.swift"; sourceTree = "<group>"; };
 		CAF5244B280B1FEE00A62886 /* 349. 两个数组的交集.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "349. 两个数组的交集.swift"; sourceTree = "<group>"; };
+		CAFE271329F82B260009D015 /* 37. 解数独.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "37. 解数独.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -943,6 +945,7 @@
 				67E393CB28880A6E00B4F252 /* 排列组合 */,
 				67C3E83B25E538780074DA25 /* 17. 电话号码的字母组合.swift */,
 				67B8CDC125E786000059D7B5 /* 22. 括号生成.swift */,
+				CAFE271329F82B260009D015 /* 37. 解数独.swift */,
 				676FBC53289D004E005882F5 /* 62.不同路径.swift */,
 				67E0BDE42872CD670066A653 /* 278. 第一个错误的版本.swift */,
 				67E0BDD0286EF12D0066A653 /* 733. 图像渲染.swift */,
@@ -1644,6 +1647,7 @@
 				67E0BDDD2872CAF90066A653 /* 994. 腐烂的橘子.swift in Sources */,
 				67631DD328B71C7700F29636 /* 240. 搜索二维矩阵 II.swift in Sources */,
 				67E0BDE02872CB3B0066A653 /* 22. 括号生成.swift in Sources */,
+				CAFE271429F82B260009D015 /* 37. 解数独.swift in Sources */,
 				67BF3E90287837FD0033A69C /* 33. 搜索旋转排序数组.swift in Sources */,
 				67E0BDDF2872CB290066A653 /* 733. 图像渲染.swift in Sources */,
 				676FBC54289D004E005882F5 /* 62.不同路径.swift in Sources */,
