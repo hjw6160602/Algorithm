@@ -252,6 +252,7 @@
 		CAF524302809D1F200A62886 /* 67.二进制求和.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5242F2809D1F200A62886 /* 67.二进制求和.swift */; };
 		CAF5244C280B1FEE00A62886 /* 349. 两个数组的交集.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5244B280B1FEE00A62886 /* 349. 两个数组的交集.swift */; };
 		CAFE271429F82B260009D015 /* 37. 解数独.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE271329F82B260009D015 /* 37. 解数独.swift */; };
+		CAFE271629F8305C0009D015 /* 36. 有效的数独 .swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE271529F8305C0009D015 /* 36. 有效的数独 .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -630,6 +631,7 @@
 		CAF5242F2809D1F200A62886 /* 67.二进制求和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "67.二进制求和.swift"; sourceTree = "<group>"; };
 		CAF5244B280B1FEE00A62886 /* 349. 两个数组的交集.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "349. 两个数组的交集.swift"; sourceTree = "<group>"; };
 		CAFE271329F82B260009D015 /* 37. 解数独.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "37. 解数独.swift"; sourceTree = "<group>"; };
+		CAFE271529F8305C0009D015 /* 36. 有效的数独 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "36. 有效的数独 .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -945,6 +947,7 @@
 				67E393CB28880A6E00B4F252 /* 排列组合 */,
 				67C3E83B25E538780074DA25 /* 17. 电话号码的字母组合.swift */,
 				67B8CDC125E786000059D7B5 /* 22. 括号生成.swift */,
+				CAFE271529F8305C0009D015 /* 36. 有效的数独 .swift */,
 				CAFE271329F82B260009D015 /* 37. 解数独.swift */,
 				676FBC53289D004E005882F5 /* 62.不同路径.swift */,
 				67E0BDE42872CD670066A653 /* 278. 第一个错误的版本.swift */,
@@ -1641,6 +1644,7 @@
 				67631DD528B8CEEE00F29636 /* 287. 寻找重复数.swift in Sources */,
 				67E0BDE52872CD670066A653 /* 278. 第一个错误的版本.swift in Sources */,
 				CA99152E29C8502A009DDAF5 /* 301. 删除无效的括号.swift in Sources */,
+				CAFE271629F8305C0009D015 /* 36. 有效的数独 .swift in Sources */,
 				CA224316288EEC8C00332C01 /* 34. 在排序数组中查找元素的第一个和最后一个位置.swift in Sources */,
 				67E39423288979AE00B4F252 /* 200. 岛屿数量.swift in Sources */,
 				67B98BAE28901D6A00B56E2D /* 78. 子集.swift in Sources */,

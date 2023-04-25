@@ -25,7 +25,8 @@ extension String {
     }
 }
 
-test37solveSudoku()
+test36solveSudoku()
+//test37solveSudoku()
 //test301removeInvalidParentheses()
 //test62uniquePaths()
 //test287findDuplicate()
